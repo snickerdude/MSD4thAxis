@@ -617,6 +617,10 @@
     [
       "f075bdc1-5939-4606-afd0-f99300daf604",
       "KeyPad"
+    ],
+    [
+      "0e7e279c-42fe-4d5f-ab1e-1661f1173f00",
+      "HandWheel"
     ]
   ],
   "text_variables": {}
