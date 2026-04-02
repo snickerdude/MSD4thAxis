@@ -2151,6 +2151,52 @@
 		)
 	)
 	(sheet
+		(at 39.37 71.12)
+		(size 35.56 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "39636035-34df-404d-b7c8-3e3bf34934f2")
+		(property "Sheetname" "Power Distribution"
+			(at 39.37 70.4084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PD.kicad_sch"
+			(at 39.37 97.1046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FourthAxis"
+				(path "/32b0d774-33bf-42ba-9d9e-f33866433972"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 177.8 121.92)
 		(size 34.29 21.59)
 		(exclude_from_sim no)
