@@ -213,6 +213,17 @@
 				)
 			)
 		)
+		(property "Digikey Part Number" ""
+			(at 153.67 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1de418c6-a116-4a3a-ae68-272a3d646855")
 		)
@@ -285,6 +296,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 92.71 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
 			(at 92.71 95.25 0)
 			(hide yes)
 			(show_name no)

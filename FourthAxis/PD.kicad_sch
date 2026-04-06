@@ -561,6 +561,17 @@
 				)
 			)
 		)
+		(property "Digikey Part Number" ""
+			(at 71.12 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "0e26bb58-d824-419d-ad58-833fb5c25c01")
 		)
@@ -649,6 +660,17 @@
 			)
 		)
 		(property "Description" "Buck DC/DC Converter, 2A, 3.3V Output Voltage, 4.5-40V Input Voltage"
+			(at 132.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
