@@ -6967,7 +6967,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.89 35.0012 -14.859)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 180)
 			)
 		)
 	)
