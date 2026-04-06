@@ -297,6 +297,7 @@
 			)
 			(justify left bottom)
 		)
+<<<<<<< HEAD
 		(uuid "153d4695-6218-4c07-bb68-d10fbb2d3986")
 	)
 	(label "5v"
@@ -304,6 +305,75 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+=======
+		(property "Value" "R"
+			(at 156.21 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.892 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 153.67 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1de418c6-a116-4a3a-ae68-272a3d646855")
+		)
+		(pin "2"
+			(uuid "e1217b40-adab-48de-b070-e1b851845a50")
+		)
+		(instances
+			(project "FourthAxis"
+				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/0e7e279c-42fe-4d5f-ab1e-1661f1173f00"
+					(reference "R5")
+					(unit 1)
+				)
+>>>>>>> c8edf79d4cfcf61e08feece28aabfb6ae1d2691c
 			)
 			(justify left bottom)
 		)
@@ -374,6 +444,23 @@
 				)
 			)
 		)
+<<<<<<< HEAD
+=======
+		(property "Digikey Part Number" ""
+			(at 92.71 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97295291-e750-47cc-9ca2-6d974d93378b")
+		)
+>>>>>>> c8edf79d4cfcf61e08feece28aabfb6ae1d2691c
 		(pin "2"
 			(uuid "3148d073-3557-40f1-93f1-234df926b2fe")
 		)
