@@ -476,12 +476,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/b8252788-53a2-4c14-8ada-6627ba0e8995")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -781,12 +775,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e639a931-93bd-4fd6-8ff7-527ee5eeb078")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1895,12 +1883,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/015194d3-1d29-47a7-991e-d798c284e8ad")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2519,12 +2501,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/ec91ebb6-5e76-4227-be05-d3d8fc9d6452")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2824,12 +2800,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/664552bb-eb78-4417-aac9-caaaca73950b")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3448,12 +3418,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/f9a744ed-13e1-40b6-ae73-5956a97cb52e")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4391,12 +4355,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/adaee670-f078-4940-92c9-48ecaeb51a92")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5015,12 +4973,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/390ac7de-c5df-458e-9680-65272ef1ede9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5320,12 +5272,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e297375f-ffd5-4e32-a475-673bb32375c7")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5625,12 +5571,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/004ca562-11a3-4fb1-ba9d-522664ab8dce")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6786,7 +6726,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6799,28 +6739,9 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c206610d-9c97-4e54-9492-be19f6677f65")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/5cb46502-a18a-4d7f-8acf-e648e5cb0c3e")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7120,12 +7041,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/dfcfb13c-cc4f-41eb-bfe2-b75019397602")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7744,12 +7659,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/a2878e9b-7280-415f-9508-67121d4591dd")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8444,12 +8353,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/c357d5e0-ce6f-49d3-b35a-d6d8638f0f43")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10206,12 +10109,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/3f37388e-80ea-4ac2-bba0-6ee5b9f5908d")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10830,12 +10727,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e7598cdd-cc54-471d-8246-6faafd8f1457")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11135,12 +11026,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/b8f9092a-edd1-4d4b-901f-92effb229abb")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11930,12 +11815,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/8a281a43-2dae-4753-a04e-df90e6cbc02f")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12725,12 +12604,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/a524d7a7-6491-4295-8e20-ba966f0fa32c")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13349,12 +13222,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/930ff920-8384-44d5-8a2e-ac6dbb3e56c9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14292,12 +14159,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/3c0508db-677e-4751-82f8-a80956ff02e9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14916,12 +14777,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/44670947-820d-4de5-a071-703874c36c21")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15392,12 +15247,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/6564a062-2b00-4584-b9dd-08da82bc8b79")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16016,12 +15865,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/f25577a0-e075-4a8d-98f5-57ab5f891b88")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17130,12 +16973,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/cb5b7547-e418-41f0-b2e5-69cabbdf506c")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19691,12 +19528,6 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/dc1c85c0-a8a0-4013-9eb8-77c8db696b60")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
