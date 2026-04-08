@@ -645,7 +645,7 @@
         "uuid": "32b0d774-33bf-42ba-9d9e-f33866433972"
       }
     ],
-    "used_designators": "R5-6,R11-12,J1,U5,#PWR4-5",
+    "used_designators": "U5-7,#PWR4-10,J1,R5-6,R11-15,SW27-28",
     "variants": []
   },
   "sheets": [
@@ -664,6 +664,10 @@
     [
       "39636035-34df-404d-b7c8-3e3bf34934f2",
       "Power Distribution"
+    ],
+    [
+      "b72fb8ef-4cdc-46b5-9289-178b699f5f8c",
+      "Knobs"
     ]
   ],
   "text_variables": {},
