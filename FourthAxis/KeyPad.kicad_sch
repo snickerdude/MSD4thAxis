@@ -4468,7 +4468,7 @@
 		)
 	)
 	(hierarchical_label "KEY_3"
-		(shape input)
+		(shape output)
 		(at 68.58 110.49 180)
 		(effects
 			(font
@@ -4490,7 +4490,7 @@
 		(uuid "51730566-7c8d-42fa-845f-4990aca8e991")
 	)
 	(hierarchical_label "KEY_1"
-		(shape input)
+		(shape output)
 		(at 68.58 82.55 180)
 		(effects
 			(font
@@ -4501,7 +4501,7 @@
 		(uuid "647f8089-b3a5-41ab-8763-bd33a5be00c5")
 	)
 	(hierarchical_label "KEY_4"
-		(shape input)
+		(shape output)
 		(at 68.58 124.46 180)
 		(effects
 			(font
@@ -4512,7 +4512,7 @@
 		(uuid "693f7f4b-aed6-4a64-a171-0ba552ef1312")
 	)
 	(hierarchical_label "KEY_2"
-		(shape input)
+		(shape output)
 		(at 68.58 96.52 180)
 		(effects
 			(font
