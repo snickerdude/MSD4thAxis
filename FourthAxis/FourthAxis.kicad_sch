@@ -1304,6 +1304,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 83.82) (xy 83.82 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "207f207b-2fd5-4214-9c3b-daee100cf9a0")
+	)
+	(wire
+		(pts
 			(xy 151.13 96.52) (xy 148.59 96.52)
 		)
 		(stroke
@@ -1321,6 +1331,16 @@
 			(type default)
 		)
 		(uuid "3b232050-e4c8-46e6-876c-2fa84d571cce")
+	)
+	(wire
+		(pts
+			(xy 33.02 77.47) (xy 39.37 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c115a35-b8fa-4397-b167-53f270c73846")
 	)
 	(wire
 		(pts
@@ -1391,6 +1411,16 @@
 			(type default)
 		)
 		(uuid "631726c7-d19b-49b3-b055-fe5883e3afc6")
+	)
+	(wire
+		(pts
+			(xy 74.93 77.47) (xy 83.82 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b29333e-ee27-475e-b698-8e628f2adc8f")
 	)
 	(wire
 		(pts
@@ -2052,6 +2082,30 @@
 			)
 		)
 	)
+	(global_label "3V3"
+		(shape input)
+		(at 83.82 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8063d796-d4f7-428a-ab4e-1c541fa67e36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.3128 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "KEY_B"
 		(shape input)
 		(at 199.39 92.71 180)
@@ -2532,6 +2586,30 @@
 			)
 		)
 	)
+	(global_label "5V"
+		(shape input)
+		(at 83.82 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cfec4d34-f856-466a-9530-b9371398ef41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.1033 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "KEY_4"
 		(shape input)
 		(at 199.39 106.68 180)
@@ -2545,6 +2623,30 @@
 		(uuid "dac01e6b-74eb-48e5-9eae-b1e314137bdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.7201 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "12V"
+		(shape input)
+		(at 33.02 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc4583f8-c052-437b-93d3-01ba6682fc1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.5272 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3264,6 +3366,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "12V" input
+			(at 39.37 77.47 180)
+			(uuid "c06e79b1-750b-4601-948d-ac2564eb7317")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5V" input
+			(at 74.93 77.47 0)
+			(uuid "0641e8a1-91f3-4139-943e-8f54b75139ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3V3" input
+			(at 74.93 83.82 0)
+			(uuid "25ceee28-19f6-48e7-ba0c-85f758075c64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
