@@ -4577,7 +4577,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "DELETE"
 			(at 182.88 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4587,7 +4587,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 182.88 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4668,7 +4668,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ANG_INC"
 			(at 226.06 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4678,7 +4678,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 226.06 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5551,7 +5551,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_9"
 			(at 161.29 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5561,7 +5561,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 161.29 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5642,7 +5642,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "RET_ZERO"
 			(at 226.06 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5652,7 +5652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5733,7 +5733,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "DECIMAL"
 			(at 118.11 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5743,7 +5743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 118.11 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5824,7 +5824,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_2"
 			(at 139.7 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5834,7 +5834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 139.7 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5915,7 +5915,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_1"
 			(at 118.11 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5925,7 +5925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 118.11 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6310,7 +6310,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_8"
 			(at 139.7 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6320,7 +6320,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 139.7 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6401,7 +6401,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NXT_SPLN"
 			(at 226.06 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6411,7 +6411,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7243,7 +7243,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ANG_ABS"
 			(at 204.47 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7253,7 +7253,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 204.47 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7447,7 +7447,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_5"
 			(at 139.7 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7457,7 +7457,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 139.7 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7990,7 +7990,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ROT_CCW"
 			(at 204.47 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8000,7 +8000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 204.47 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8194,7 +8194,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_4"
 			(at 118.11 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8204,7 +8204,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 118.11 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8378,7 +8378,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_2"
 			(at 247.65 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8388,7 +8388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 247.65 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8469,7 +8469,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_3"
 			(at 247.65 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8479,7 +8479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 247.65 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -8560,7 +8560,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SET_ZERO"
 			(at 204.47 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8570,7 +8570,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 204.47 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8764,7 +8764,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_6"
 			(at 161.29 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8774,7 +8774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 161.29 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8968,7 +8968,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ROT_CW"
 			(at 226.06 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8978,7 +8978,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 226.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9343,7 +9343,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SET_SPLN"
 			(at 204.47 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9353,7 +9353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 204.47 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9434,7 +9434,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_3"
 			(at 161.29 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9444,7 +9444,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9731,7 +9731,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "PLUS_MINUS"
 			(at 161.29 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9741,7 +9741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 161.29 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9822,7 +9822,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ENTER"
 			(at 182.88 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9832,7 +9832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 182.88 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9913,7 +9913,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_7"
 			(at 118.11 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9923,7 +9923,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 118.11 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -10210,7 +10210,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_0"
 			(at 139.7 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10220,7 +10220,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 139.7 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10414,7 +10414,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_4"
 			(at 247.65 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10424,7 +10424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 247.65 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10731,7 +10731,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_1"
 			(at 247.65 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10741,7 +10741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 			(at 247.65 74.93 0)
 			(hide yes)
 			(show_name no)

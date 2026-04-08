@@ -406,10 +406,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "076b65b2-8115-41a6-8975-a747dc73a11b")
-		(at 328.263 139.437)
+		(at 170.434 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW25"
@@ -423,7 +423,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_3"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "a7123e04-e095-4ae3-894f-d176dc4f5b35")
@@ -465,7 +465,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9cca3961-c729-4a54-8bef-4e980627906e")
+			(uuid "70415003-3642-484b-bd78-3e9f795109ff")
 			(effects
 				(font
 					(size 1 1)
@@ -476,6 +476,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/b8252788-53a2-4c14-8ada-6627ba0e8995")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -693,22 +699,22 @@
 			(uuid "69b14b96-a337-4d06-b815-e6d388dcbaa6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "0ac92468-a56a-4e03-a04f-0bcb73e5ccba")
-		(at 298.083 124.347)
+		(at 112.522 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW14"
@@ -722,7 +728,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ENTER"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "04f38f58-2712-4bdf-a2bc-46b33d2b2266")
@@ -764,7 +770,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ded074a-44f3-4dc5-9e91-450b1c074d62")
+			(uuid "cee9a9fc-ef19-414a-b1b6-630a9bd6c9a9")
 			(effects
 				(font
 					(size 1 1)
@@ -775,6 +781,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e639a931-93bd-4fd6-8ff7-527ee5eeb078")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -992,15 +1004,15 @@
 			(uuid "fec173ef-c0e7-4932-bc4d-6c08eebedfaf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -1813,10 +1825,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "118985b7-31c2-43f5-b00b-77f2eea33d3d")
-		(at 313.173 154.527)
+		(at 151.13 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW21"
@@ -1830,7 +1842,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ANG_INC"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "cbc937b5-5fe2-455c-a1d5-f689b4a0f826")
@@ -1872,7 +1884,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0c664b50-2d73-4b7c-b9cf-6a478bdf97a4")
+			(uuid "2ed203d4-d4a1-4cc1-8601-8deed87aa9cb")
 			(effects
 				(font
 					(size 1 1)
@@ -1883,6 +1895,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/015194d3-1d29-47a7-991e-d798c284e8ad")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2100,15 +2118,15 @@
 			(uuid "8ad48ccc-4440-4ab3-afcb-1271d3c554f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -2431,10 +2449,168 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "1b501470-4265-4e6e-8fb7-242af68297e6")
+		(at 223.669 115.563)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R11"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "08eb3a7b-8d2a-47f7-abf6-d5437a1d8fc7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "aa0c7261-549f-4f22-9889-bc3109d19485")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "574fa376-dcd9-40cc-9bb9-67b09c6b5878")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4464f2d9-c85d-49a2-a9fd-69164b65b752")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "58b4c917-b987-49c4-b0f4-42888b55b29c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/0e7e279c-42fe-4d5f-ab1e-1661f1173f00/c87246a8-03d9-4cc1-8b9d-b47db47d233f")
+		(sheetname "/HandWheel/")
+		(sheetfile "Handwheel.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "53b96035-e4fb-43f4-8e7f-f3dd5f4898bc")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "189b6d51-9ee6-4e09-8c22-c036fc138625")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0f9d3ea1-80f1-4839-a26e-9ccdef8a076e")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "c45130f5-621d-4a07-a049-ceb4dcb08715")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f9c5c47d-1d3c-4e0a-b916-d35f45f3f6d9")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "5V")
+			(pintype "passive")
+			(uuid "29fb9a6f-c5f8-4b4e-aafc-01706c5b9a1d")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U6-DIR)")
+			(pintype "passive")
+			(uuid "ba609454-416e-493d-bdc7-9ba54cb0c288")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "1dd901fa-1296-40fd-9451-7691e4bb369d")
-		(at 282.993 109.257)
+		(at 73.914 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW8"
@@ -2448,7 +2624,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_0"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "95520066-94b4-4b72-b568-099d99c229c7")
@@ -2490,7 +2666,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8b54568-8507-40d2-91ca-f4c6be7678b6")
+			(uuid "3622d779-bf12-4e73-ae3d-0b6b2600a96b")
 			(effects
 				(font
 					(size 1 1)
@@ -2501,6 +2677,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/ec91ebb6-5e76-4227-be05-d3d8fc9d6452")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2718,22 +2900,22 @@
 			(uuid "5f6d850f-1936-4905-98b9-c920c63d3e3e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "218404d0-b1b8-4c0d-a33e-c88e5a7535e8")
-		(at 313.173 139.437)
+		(at 151.13 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW20"
@@ -2747,7 +2929,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NXT_SPLN"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "a0cfe448-1c2f-43e5-a58a-3fc6317e37cc")
@@ -2789,7 +2971,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b0ef1de4-e4a2-4eed-a903-47a5f51b8c98")
+			(uuid "1ee4e186-f62e-4791-9ce3-ff31661d07e9")
 			(effects
 				(font
 					(size 1 1)
@@ -2800,6 +2982,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/664552bb-eb78-4417-aac9-caaaca73950b")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3017,7 +3205,165 @@
 			(uuid "55650a60-30d8-4afa-8311-3284ae22b18a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.9 35 -15)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 -180)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "22ef1c7e-726a-4284-b62a-3f6e64b2e96c")
+		(at 217.659 123.093)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R14"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "02920a22-9f05-420c-8ca1-4a95c9bd5f37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "096ce9b7-e6d4-4b87-a4b6-9b2e5082df67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8364457d-1bff-48f0-ad74-9819d41d08e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79b6d0b9-4aa1-42ed-b6f3-2ec8da844901")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "377bca33-91fb-4a3c-ab90-6e14dcefd508")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/b72fb8ef-4cdc-46b5-9289-178b699f5f8c/84b4d363-833e-4f2c-973d-e9b842c9b7b9")
+		(sheetname "/Knobs/")
+		(sheetfile "Knobs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4f518dff-a014-4e66-8afb-890556ed9605")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d9d07c62-0e95-42d4-b832-cfc8362dab5e")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a983642c-ce0b-40ea-b25f-d8914a605b5f")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "e6901aa9-1c38-4ec2-91c6-254b1d3ff4ba")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c1517d6d-7520-4e3e-a1ae-5806d43f0656")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "3V3")
+			(pintype "passive")
+			(uuid "ad73d888-38db-4b24-97ee-903d1b0c1eb0")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R14-Pad2)")
+			(pintype "passive")
+			(uuid "e034c7fb-b4f7-4f2b-be76-0fd87f4c7678")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3348,10 +3694,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "2af3c7f0-2237-4f86-89cd-6d933724cb5a")
-		(at 328.263 109.257)
+		(at 170.434 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW23"
@@ -3365,7 +3711,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_1"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "3f8881b2-24be-48ea-a20b-6845ac111ed4")
@@ -3407,7 +3753,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e54550ba-2919-4cc3-b18f-c8d4c1895394")
+			(uuid "b1250bc8-6108-45c0-a228-c7336d0154fa")
 			(effects
 				(font
 					(size 1 1)
@@ -3418,6 +3764,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/f9a744ed-13e1-40b6-ae73-5956a97cb52e")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3635,15 +3987,15 @@
 			(uuid "a06904c0-ae2a-40e5-b170-6d97f1c43d29")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -4285,10 +4637,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "3095c366-267e-4705-8ff3-7b35325c25a2")
-		(at 328.263 124.347)
+		(at 170.434 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW24"
@@ -4302,7 +4654,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_2"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "b94b2ffe-930c-4612-b0f3-30a05a251f06")
@@ -4344,7 +4696,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9ff3674a-9648-42b0-b960-bc98476722af")
+			(uuid "0b25733d-1fd6-47df-990c-da632b059a4f")
 			(effects
 				(font
 					(size 1 1)
@@ -4355,6 +4707,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/adaee670-f078-4940-92c9-48ecaeb51a92")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4572,15 +4930,15 @@
 			(uuid "446f0d7b-33d7-4d30-95d2-39b98c3dfa4e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -4903,10 +5261,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "31f5d47c-bef1-4379-97a8-b571e34352d4")
-		(at 282.993 154.527)
+		(at 93.218 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW11"
@@ -4920,7 +5278,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_9"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "e797e14e-3e50-4fae-92cf-235ff271d0b4")
@@ -4962,7 +5320,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d8bded25-1b5e-413d-ab9e-bc2ea7a0e0a5")
+			(uuid "67c4ad81-74ec-41d0-be90-f1ef434d9c5e")
 			(effects
 				(font
 					(size 1 1)
@@ -4973,6 +5331,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/390ac7de-c5df-458e-9680-65272ef1ede9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5190,22 +5554,22 @@
 			(uuid "6e53821a-88a4-4d0e-9d3d-daf3b375e6da")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "39dc1ce0-f793-4304-be0b-0561ce9a3ba7")
-		(at 298.083 94.167)
+		(at 93.218 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW12"
@@ -5219,7 +5583,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "PLUS_MINUS"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "35210722-a322-4cbc-8135-e7bcbf8a7ef1")
@@ -5261,7 +5625,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fa7fe490-1c7e-4a47-8090-b795f0506522")
+			(uuid "290d7d7d-3463-4c8e-adf8-0adf48132ec2")
 			(effects
 				(font
 					(size 1 1)
@@ -5272,6 +5636,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e297375f-ffd5-4e32-a475-673bb32375c7")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5489,22 +5859,22 @@
 			(uuid "44a022b3-1e7b-494d-bb71-3dbefaf7e1da")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "39edaa63-b0ef-4279-8e17-9157699a2d66")
-		(at 298.083 109.257)
+		(at 112.522 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW13"
@@ -5518,7 +5888,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "DELETE"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "203ecd19-d361-4f44-876e-04427b74f574")
@@ -5560,7 +5930,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "13be54e0-c5fa-4c3f-9ec8-1275165738d4")
+			(uuid "5a32cf13-4aa1-4034-a1e8-aa2afe342fc5")
 			(effects
 				(font
 					(size 1 1)
@@ -5571,6 +5941,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/004ca562-11a3-4fb1-ba9d-522664ab8dce")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5788,15 +6164,15 @@
 			(uuid "9b86c5a8-deed-4734-9cd7-59a8d3b633cd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -6685,10 +7061,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "46a105e0-56c4-4b03-a6c2-e9d9fa5695eb")
-		(at 227.076 114.808)
+		(at 54.61 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW1"
@@ -6702,7 +7078,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_1"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "e45d57e9-5049-475f-910b-0913b9b27028")
@@ -6726,7 +7102,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6739,9 +7115,28 @@
 				)
 			)
 		)
+		(property "Digikey Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "815ee709-56d2-47dc-8ec1-3d0e98eb3613")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/5cb46502-a18a-4d7f-8acf-e648e5cb0c3e")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6959,33 +7354,22 @@
 			(uuid "f37e1f73-c2cf-47ef-96eb-ef8d35dd1f81")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz -135.89 35.0012 -14.859)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 6 -0 180)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "478ebd28-0823-4ffb-b5a5-89c9e12853c4")
-		(at 282.993 124.347)
+		(at 93.218 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW9"
@@ -6999,7 +7383,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_3"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "01675c63-2840-43ea-a8fb-52800d168195")
@@ -7041,7 +7425,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "368817b5-bc80-44e5-bdf3-78a6ffbe0866")
+			(uuid "fe6f846c-fd84-4b7b-afe6-087f900d66f2")
 			(effects
 				(font
 					(size 1 1)
@@ -7052,6 +7436,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/dfcfb13c-cc4f-41eb-bfe2-b75019397602")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7269,15 +7659,15 @@
 			(uuid "26b9242f-ce0e-44f9-975a-a3ec80e0313a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -7600,10 +7990,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "4fb1703b-a038-48eb-b1ea-55ae74d34bf3")
-		(at 313.173 109.257)
+		(at 131.826 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW18"
@@ -7617,7 +8007,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ROT_CCW"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "b671fe49-a369-4eb7-97df-8e669f9605b3")
@@ -7659,7 +8049,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5d423a5f-7891-44c2-b2f0-3ab048a96653")
+			(uuid "4846e915-d179-4d63-b36e-80c31933be08")
 			(effects
 				(font
 					(size 1 1)
@@ -7670,6 +8060,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/a2878e9b-7280-415f-9508-67121d4591dd")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7887,15 +8283,15 @@
 			(uuid "e9bf68e8-8c88-4399-b344-0f02b34f94fb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -8294,10 +8690,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "560c4581-923d-4700-8374-4296b861f174")
-		(at 282.993 139.437)
+		(at 93.218 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW10"
@@ -8311,7 +8707,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_6"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "1ce44696-e329-4371-a8f1-06f1d4917c8b")
@@ -8353,7 +8749,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e4c5526a-2987-4aac-885a-9855025cb452")
+			(uuid "00a65dad-0cfd-4b0f-8f5b-1b46bd89929b")
 			(effects
 				(font
 					(size 1 1)
@@ -8364,6 +8760,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/c357d5e0-ce6f-49d3-b35a-d6d8638f0f43")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8581,15 +8983,15 @@
 			(uuid "fd826170-e3d7-4500-89f7-0e2a093ac4ca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -9257,7 +9659,7 @@
 	(footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "5dd28faa-491e-4548-be2d-338e6a4ad01b")
-		(at 337.493 97.602)
+		(at 197.547 138.049)
 		(descr "SOIC, 16 Pin (JEDEC MS-012, variation AC, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf)")
 		(tags "SOIC SO 16-pin-NSOP R-16 R-16-S D0016A M2B SO16 SOT109-1 751B SOIC_N narrow")
 		(property "Reference" "U2"
@@ -10050,10 +10452,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "648658aa-fd56-43ca-b589-1149fb259bc9")
-		(at 267.903 124.347)
+		(at 54.61 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW4"
@@ -10067,7 +10469,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "DECIMAL"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "ce501c3f-3cf0-4c62-91ea-d078d519f715")
@@ -10109,7 +10511,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "99e6a7d1-7ed4-4461-a09b-70704db4ff77")
+			(uuid "ebcce7aa-fad8-4e03-ae37-0a350f677ceb")
 			(effects
 				(font
 					(size 1 1)
@@ -10120,6 +10522,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/3f37388e-80ea-4ac2-bba0-6ee5b9f5908d")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10337,15 +10745,15 @@
 			(uuid "871d3f9a-2e91-4990-b171-7216dcb30a57")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -10668,10 +11076,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "6b766090-c7f9-4f1b-b122-70c3fe474fa1")
-		(at 267.903 109.257)
+		(at 54.61 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW3"
@@ -10685,7 +11093,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_7"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "6cf4cea9-7514-4a45-b840-66b679565143")
@@ -10727,7 +11135,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31845a9e-dbda-488c-bbd4-eaba3bde9136")
+			(uuid "da0390be-afd9-4294-90ca-7c69e5c044c0")
 			(effects
 				(font
 					(size 1 1)
@@ -10738,6 +11146,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/e7598cdd-cc54-471d-8246-6faafd8f1457")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10955,7 +11369,165 @@
 			(uuid "1f8aad22-4df7-4420-9612-bfd666527107")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.9 35 -15)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 -180)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "6d3e13b6-9d6d-4cdd-8ed6-96cae5040133")
+		(at 223.669 118.073)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R12"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "a9a61718-b2fb-4766-9993-423c907d7679")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "6f3fd2a4-047e-462d-9b1d-2ddd191ae3d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdafe82b-3864-4f6f-a656-28213358e022")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d7dedb1-ec07-4735-850e-ff6442e89739")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a338e7ce-8e83-400b-b1d3-887f560ae1f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/0e7e279c-42fe-4d5f-ab1e-1661f1173f00/c16e974d-ca85-42a5-ab04-2f29900d35ae")
+		(sheetname "/HandWheel/")
+		(sheetfile "Handwheel.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e6e6898e-a553-4272-a75d-62ab2534ed17")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cd631213-9935-4f4d-9dfd-dd730a0ad537")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4774c525-35e4-4379-a52f-39a80fc9e1a9")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "f5828b6f-9e38-4943-9877-cd4e1cf50343")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b3d9326f-95b1-48e8-8500-e20990d9729b")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "5V")
+			(pintype "passive")
+			(uuid "8122ed5e-b825-4060-889c-32ca792a5fb8")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U7-DIR)")
+			(pintype "passive")
+			(uuid "7fc132e5-7bd0-4a0d-9911-5c7419ffe21d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10967,10 +11539,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "6fdfc43d-9802-49f4-a5f7-f9a4b7f3678d")
-		(at 298.083 139.437)
+		(at 131.826 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW15"
@@ -10984,7 +11556,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SET_ZERO"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "47b1e979-558a-4865-92d5-e5154bdf838d")
@@ -11026,7 +11598,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cf701b39-d316-48de-bd69-8396ec4903b1")
+			(uuid "0cc745ed-5d19-4336-969d-e59a1e416b8e")
 			(effects
 				(font
 					(size 1 1)
@@ -11037,6 +11609,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/b8f9092a-edd1-4d4b-901f-92effb229abb")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11254,7 +11832,165 @@
 			(uuid "354cb1fa-68d3-4b6b-b195-0417b28580aa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.9 35 -15)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 -180)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "734103d7-9197-418d-8734-57100a40d497")
+		(at 217.659 118.073)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R6"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "a7b0c9db-4330-4b2a-9c86-3f3af7cc74e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "430d5bca-f917-4995-9a45-8662e215c8e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49e14b2a-c6a7-4f4d-81d7-029c7ba17bad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75516d59-736a-427d-8c74-75ec641d203e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "04a6c85d-2f82-4017-a34d-0260814a7fff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/b72fb8ef-4cdc-46b5-9289-178b699f5f8c/88da3bd1-4802-426d-a4cc-9a81c6b0227b")
+		(sheetname "/Knobs/")
+		(sheetfile "Knobs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "be5a7026-b998-4e2f-975d-4b804af30574")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "986e1030-8ae2-4975-8522-cee6507fc79a")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1be1282e-203e-43c9-aeb2-c6725d5bb3d2")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "20559ba9-a652-4bca-bfb2-2e21df60f29c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "08cef185-9035-43b2-a6dc-e17290696fcf")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R13-Pad2)")
+			(pintype "passive")
+			(uuid "295674c0-5186-48c8-ac21-c7c41c9703a3")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R5-Pad1)")
+			(pintype "passive")
+			(uuid "70ae495b-ebd5-4984-81f4-e7aff7255eb2")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11756,10 +12492,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "7c4602a5-670f-4f54-9499-26e19ed7de3f")
-		(at 313.173 94.167)
+		(at 131.826 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW17"
@@ -11773,7 +12509,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ANG_ABS"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "66534e42-80a4-4e04-9b1f-47737389bd2d")
@@ -11815,7 +12551,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e930860f-6d34-46d4-aac3-ccf0beff836d")
+			(uuid "3a6f705c-0a2d-4b5a-892c-caaee8bcc2e2")
 			(effects
 				(font
 					(size 1 1)
@@ -11826,6 +12562,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/8a281a43-2dae-4753-a04e-df90e6cbc02f")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12043,15 +12785,15 @@
 			(uuid "5fe63fe6-bc05-4047-bf33-1560d81df00b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -12545,10 +13287,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "8008d56a-eb01-44c1-a5d0-ed3c9b30f350")
-		(at 267.903 94.167)
+		(at 54.61 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW2"
@@ -12562,7 +13304,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_4"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "eec715d3-44a9-4faf-88e5-8a6e99c72f01")
@@ -12604,7 +13346,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77997a0c-7677-4074-ba92-0db5e8ae6a02")
+			(uuid "1f3c9b2b-48f5-4d3d-ae6f-1883394f3880")
 			(effects
 				(font
 					(size 1 1)
@@ -12615,6 +13357,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/a524d7a7-6491-4295-8e20-ba966f0fa32c")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12832,7 +13580,382 @@
 			(uuid "5c7cc63e-ad50-4faf-ba0f-a70a9864ec1c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.9 35 -15)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 -180)
+			)
+		)
+	)
+	(footprint "Package_TO_SOT_SMD:SOT-23-6"
+		(layer "F.Cu")
+		(uuid "83b1c06e-e167-4e52-8b68-34f1cfd7e6aa")
+		(at 214.427 137.089)
+		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
+		(tags "SOT TO_SOT_SMD")
+		(property "Reference" "U6"
+			(at 0 -2.4 0)
+			(layer "F.SilkS")
+			(uuid "6a4ad668-ed4a-408e-b1a4-46296d542eb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1T45DBV"
+			(at 0 2.4 0)
+			(layer "F.Fab")
+			(uuid "ef4df88d-cf09-4269-aea6-9fae477b40da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f6bc275-52f3-47a7-bc8a-40db14e4e078")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f97177f-bdf3-41e5-ac3f-977c180ec2d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7812a5a8-1d41-4325-8917-50a6e507b477")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "74LVC1T45W6-7DICT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2c9b443-e97d-4e15-957d-a2bf3710a413")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOT?23*")
+		(path "/0e7e279c-42fe-4d5f-ab1e-1661f1173f00/f1be984c-cd9a-4f70-aa03-8f82bf9e77a0")
+		(sheetname "/HandWheel/")
+		(sheetfile "Handwheel.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "5" "1" "2" "6" "4")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.91 -1.56)
+			(end 0.91 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8b0111bc-1624-4be2-a3dd-7e1ae2ae08bc")
+		)
+		(fp_line
+			(start -0.91 -1.51)
+			(end -0.91 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "24d12c95-e370-499b-b205-a42453a8a66a")
+		)
+		(fp_line
+			(start -0.91 1.56)
+			(end -0.91 1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b4a0b92a-cbed-4ddf-8b71-7179cc6907c1")
+		)
+		(fp_line
+			(start 0.91 -1.56)
+			(end 0.91 -1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "53c26dce-f91e-4d6a-b9ea-15f91ebee170")
+		)
+		(fp_line
+			(start 0.91 1.51)
+			(end 0.91 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d6d810e2-a37a-450e-95b8-5f5ab1a772a7")
+		)
+		(fp_line
+			(start 0.91 1.56)
+			(end -0.91 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8a3b539b-8591-487a-83a1-6503a7cc603b")
+		)
+		(fp_poly
+			(pts
+				(xy -1.45 -1.51) (xy -1.69 -1.84) (xy -1.21 -1.84)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "451dd56f-41b5-43a9-9baf-73079e38c569")
+		)
+		(fp_line
+			(start -2.05 -1.5)
+			(end -1.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c9ea6143-cb31-42b6-a22b-694c0e2469e3")
+		)
+		(fp_line
+			(start -2.05 1.5)
+			(end -2.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "54c03738-0fbc-43c4-bea5-4bf4e3c4c44a")
+		)
+		(fp_line
+			(start -1.05 -1.7)
+			(end 1.05 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "06b6c4bd-95b6-4e18-b1f4-94114235fc54")
+		)
+		(fp_line
+			(start -1.05 -1.5)
+			(end -1.05 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "66458ead-29c5-4199-ab41-1c3016b46cc0")
+		)
+		(fp_line
+			(start -1.05 1.5)
+			(end -2.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "916ca262-a098-4b78-a84f-86bb20e9afa9")
+		)
+		(fp_line
+			(start -1.05 1.7)
+			(end -1.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d8b5fdef-658f-4701-b414-786e09f02d77")
+		)
+		(fp_line
+			(start 1.05 -1.7)
+			(end 1.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "13bed027-80c3-406c-858a-0d3ecb86a229")
+		)
+		(fp_line
+			(start 1.05 -1.5)
+			(end 2.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "11bc4310-f109-428f-8a2e-56299989eee3")
+		)
+		(fp_line
+			(start 1.05 1.5)
+			(end 1.05 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2723842c-4b8c-4d20-ab1d-0abe2d8e8073")
+		)
+		(fp_line
+			(start 1.05 1.7)
+			(end -1.05 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "619251b3-cb55-47b2-8a1b-7352c9d75efa")
+		)
+		(fp_line
+			(start 2.05 -1.5)
+			(end 2.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "956dd7c5-a7e4-48d7-b97f-b6a932090e8a")
+		)
+		(fp_line
+			(start 2.05 1.5)
+			(end 1.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "86e92ebf-878e-4c12-b3bf-83a11287f3fa")
+		)
+		(fp_poly
+			(pts
+				(xy -0.4 -1.45) (xy 0.8 -1.45) (xy 0.8 1.45) (xy -0.8 1.45) (xy -0.8 -1.05)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "750d574d-2557-41c1-a291-abadee726a43")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "e5d176aa-693d-42a2-b88d-b7083a0a6e25")
+			(effects
+				(font
+					(size 0.72 0.72)
+					(thickness 0.11)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.1375 -0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "5V")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
+			(uuid "06283be5-b1c5-4ecd-9440-0dbf996b10af")
+		)
+		(pad "2" smd roundrect
+			(at -1.1375 0)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
+			(uuid "e30019e0-aa08-4b25-a7b8-e46fd4583a0b")
+		)
+		(pad "3" smd roundrect
+			(at -1.1375 0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "HAND_INC_A")
+			(pinfunction "A_3")
+			(pintype "bidirectional")
+			(uuid "fec75111-4193-4541-9566-dd9cc3748a49")
+		)
+		(pad "4" smd roundrect
+			(at 1.1375 0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "HAND_INT")
+			(pinfunction "B_4")
+			(pintype "bidirectional")
+			(uuid "f6a7ae3e-adec-4180-add3-a5896d6c66fb")
+		)
+		(pad "5" smd roundrect
+			(at 1.1375 0)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U6-DIR)")
+			(pinfunction "DIR_5")
+			(pintype "input")
+			(uuid "2b9ea407-a373-4213-a648-eb1f7d42524d")
+		)
+		(pad "6" smd roundrect
+			(at 1.1375 -0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "3V3")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
+			(uuid "f170ec35-f2fd-4d1f-9a50-fac06204715e")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13163,10 +14286,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "85fdd085-67df-46d3-987f-60d6d86a7363")
-		(at 267.903 154.527)
+		(at 73.914 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW6"
@@ -13180,7 +14303,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_5"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "85ff8edc-e490-4e22-8b44-fbd4c373ca4f")
@@ -13222,7 +14345,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31a71c3f-f188-417d-a19d-635d139aa7e6")
+			(uuid "17e38826-bc34-4a68-b0d6-eddf35448c39")
 			(effects
 				(font
 					(size 1 1)
@@ -13233,6 +14356,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/930ff920-8384-44d5-8a2e-ac6dbb3e56c9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13450,15 +14579,15 @@
 			(uuid "2eff7f0b-1d1f-490e-b791-1413e574100b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -14100,10 +15229,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "968e4307-6fc9-4738-b7f5-98af8ccc8f2e")
-		(at 313.173 124.347)
+		(at 151.13 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW19"
@@ -14117,7 +15246,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "RET_ZERO"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "fb52d632-3aa3-475e-9414-f68eee426b78")
@@ -14159,7 +15288,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b8d82e74-6822-4237-a56b-f5a468861a1f")
+			(uuid "e34b9675-c9b5-478a-ad34-5f53e38338cc")
 			(effects
 				(font
 					(size 1 1)
@@ -14170,6 +15299,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/3c0508db-677e-4751-82f8-a80956ff02e9")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14387,15 +15522,15 @@
 			(uuid "b533f1b1-a3ec-4552-b4a4-57ebc2d55ceb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -14718,10 +15853,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "a243c0d0-310d-4c88-9be2-bdbbc59cb6f7")
-		(at 267.903 139.437)
+		(at 73.914 83.566)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW5"
@@ -14735,7 +15870,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_2"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "d90b2ac1-b1fa-46b0-9129-986e4e3e5626")
@@ -14777,7 +15912,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "14416a7b-cc86-437d-be5b-6507f6b35443")
+			(uuid "85fa22e1-82e0-4eeb-8195-3fc07601ce98")
 			(effects
 				(font
 					(size 1 1)
@@ -14788,6 +15923,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/44670947-820d-4de5-a071-703874c36c21")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15005,7 +16146,165 @@
 			(uuid "20063878-310d-43b3-bf1c-33a12d0839ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
+			(offset
+				(xyz -135.9 35 -15)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 6 -0 -180)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "a47cb4cb-bb6c-42e6-b2e1-7557f28114af")
+		(at 217.659 125.603)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R15"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "a2b504de-7555-4e51-ab1c-784d43309de8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "7153d8f6-8382-49a8-a9e1-e1000a082c81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "beef83ba-14a8-4ace-82fd-17fe5929391d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcc74ce9-b422-4337-8c86-f3764f457b0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6aef138e-1263-4087-934e-705662d33268")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/b72fb8ef-4cdc-46b5-9289-178b699f5f8c/dde08ca4-9142-4403-bbbd-65fee6e43503")
+		(sheetname "/Knobs/")
+		(sheetfile "Knobs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "09e765bb-e192-499d-bffa-0aed7f5f7a75")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5bf0c63f-e326-4d66-9aef-eb764b39bf77")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c75c000a-a709-499e-aa89-ace9e98266d6")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "760eda37-f764-4822-a607-ca931e510692")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "4c8f1e05-da1b-455c-a518-1395cf1957fd")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R14-Pad2)")
+			(pintype "passive")
+			(uuid "3d0c73e8-2231-48fb-b034-89429e583902")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "19a9ae1e-6b16-4dc9-9a1c-da36d575af4f")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15188,10 +16487,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "a678f5de-f386-4a00-b249-adda5432a001")
-		(at 282.993 94.167)
+		(at 73.914 122.174)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW7"
@@ -15205,7 +16504,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "NUM_8"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "1c2e0ecf-e1ff-4f7b-836d-c083a4906fc9")
@@ -15247,7 +16546,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "87e2d84d-46cd-447e-a0e8-679110b6fc06")
+			(uuid "e0b3b837-9a9f-434a-860f-0eff05c5f043")
 			(effects
 				(font
 					(size 1 1)
@@ -15258,6 +16557,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/6564a062-2b00-4584-b9dd-08da82bc8b79")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15475,15 +16780,15 @@
 			(uuid "847fac6a-abfa-4bb2-988b-fb96f4ee44a4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -15806,10 +17111,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "abbe74a4-ef1c-4d72-a353-6848c4beb222")
-		(at 328.263 154.527)
+		(at 170.434 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW26"
@@ -15823,7 +17128,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EXTRA_4"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "450d4bee-a135-4fce-b7fe-466635212e23")
@@ -15865,7 +17170,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "36c0c740-2e75-4cb0-a540-6b032ef08ae3")
+			(uuid "0be7da96-0ea0-4601-9b97-759b19e8cfd9")
 			(effects
 				(font
 					(size 1 1)
@@ -15876,6 +17181,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/f25577a0-e075-4a8d-98f5-57ab5f891b88")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16093,15 +17404,15 @@
 			(uuid "6dc2bb81-d8c3-410e-b65c-5c87a135bd52")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -16914,10 +18225,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "c024b6aa-976b-4718-bdd0-46a75cade3c9")
-		(at 328.263 94.167)
+		(at 151.13 141.478)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW22"
@@ -16931,7 +18242,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "ROT_CW"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "c6b3d8b6-12f7-4058-967a-b69c050edae4")
@@ -16973,7 +18284,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a31c72e6-b44d-453b-b31c-619250f37b2f")
+			(uuid "d34c7382-1c17-4afe-9b87-50c6bff31bc8")
 			(effects
 				(font
 					(size 1 1)
@@ -16984,6 +18295,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/cb5b7547-e418-41f0-b2e5-69cabbdf506c")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17201,15 +18518,15 @@
 			(uuid "4715fdc5-c932-4555-9a85-c4bf188ba9f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
@@ -17521,6 +18838,539 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Package_TO_SOT_SMD:SOT-23-6"
+		(layer "F.Cu")
+		(uuid "c7c99e53-87f9-4cb3-b83d-0c3b24c89433")
+		(at 214.427 141.714)
+		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
+		(tags "SOT TO_SOT_SMD")
+		(property "Reference" "U7"
+			(at 0 -2.4 0)
+			(layer "F.SilkS")
+			(uuid "d28bacbe-7488-4d75-a565-6944b7ca2fe1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1T45DBV"
+			(at 0 2.4 0)
+			(layer "F.Fab")
+			(uuid "3daab9b1-92da-45e4-bb7c-bb46e49779b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89e08ada-db5a-4783-ba7a-485b95d2d419")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5eba5e7f-f841-431c-b24a-102942173cdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d210f4ae-95ee-4958-9f9a-9b0629bec2d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "74LVC1T45W6-7DICT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b5b1901-a683-40cb-b39f-311e3ab292e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOT?23*")
+		(path "/0e7e279c-42fe-4d5f-ab1e-1661f1173f00/815d8706-0aef-4847-accb-4087213e7d42")
+		(sheetname "/HandWheel/")
+		(sheetfile "Handwheel.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "5" "1" "2" "6" "4")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.91 -1.56)
+			(end 0.91 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ccf57d0c-46f4-470a-9b2a-3aa72cb7a92a")
+		)
+		(fp_line
+			(start -0.91 -1.51)
+			(end -0.91 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eff1b053-dd84-4bac-8b26-e776c2653d66")
+		)
+		(fp_line
+			(start -0.91 1.56)
+			(end -0.91 1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0629e09a-224f-49ba-9c32-2ad2aa667ec3")
+		)
+		(fp_line
+			(start 0.91 -1.56)
+			(end 0.91 -1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "97e12e1a-7eb6-4683-856f-2ee17fb0d919")
+		)
+		(fp_line
+			(start 0.91 1.51)
+			(end 0.91 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8a64ae55-8ef7-43be-a9fb-337f8526619d")
+		)
+		(fp_line
+			(start 0.91 1.56)
+			(end -0.91 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96ab1fca-d825-4c6e-bdcd-10bc83c7384b")
+		)
+		(fp_poly
+			(pts
+				(xy -1.45 -1.51) (xy -1.69 -1.84) (xy -1.21 -1.84)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "303f5012-6810-4b7f-bfa8-19f1f42b3f30")
+		)
+		(fp_line
+			(start -2.05 -1.5)
+			(end -1.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "331d31df-9d65-491f-8b02-5a02fc1e6bc4")
+		)
+		(fp_line
+			(start -2.05 1.5)
+			(end -2.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5a86151b-47ad-4113-8fe0-8c7b8a795c8b")
+		)
+		(fp_line
+			(start -1.05 -1.7)
+			(end 1.05 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "eab9df98-e4de-452d-87e6-953dcfada546")
+		)
+		(fp_line
+			(start -1.05 -1.5)
+			(end -1.05 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a9961d34-0b2b-436d-aa82-7480661188f4")
+		)
+		(fp_line
+			(start -1.05 1.5)
+			(end -2.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a8da137d-3a13-4c20-8e30-27bf9992dac0")
+		)
+		(fp_line
+			(start -1.05 1.7)
+			(end -1.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bf4c2515-a4a7-4ccd-b5bc-eceaf3b5d16a")
+		)
+		(fp_line
+			(start 1.05 -1.7)
+			(end 1.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8585ee9c-856c-4bd6-bb55-8013427803ea")
+		)
+		(fp_line
+			(start 1.05 -1.5)
+			(end 2.05 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d42070fb-0f8f-4c9e-9c9d-f1a8b32eedd1")
+		)
+		(fp_line
+			(start 1.05 1.5)
+			(end 1.05 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "749df05b-9eb3-437a-8d8c-38ff2f106095")
+		)
+		(fp_line
+			(start 1.05 1.7)
+			(end -1.05 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "46b6ab8a-0c8d-430a-bf0f-1c8e5794f916")
+		)
+		(fp_line
+			(start 2.05 -1.5)
+			(end 2.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "93e1eb34-4eae-4aad-9ec5-49c1dfd6ae93")
+		)
+		(fp_line
+			(start 2.05 1.5)
+			(end 1.05 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a54225af-b1b6-4960-a2c2-358c2829e713")
+		)
+		(fp_poly
+			(pts
+				(xy -0.4 -1.45) (xy 0.8 -1.45) (xy 0.8 1.45) (xy -0.8 1.45) (xy -0.8 -1.05)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "7ac1bb85-2e78-4077-a0c0-f8c5c32e3e1e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "fdb230d3-89ba-4464-96ee-06d9788539a4")
+			(effects
+				(font
+					(size 0.72 0.72)
+					(thickness 0.11)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.1375 -0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "5V")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
+			(uuid "a8912411-9ca7-4d4e-8a28-79f49b10d220")
+		)
+		(pad "2" smd roundrect
+			(at -1.1375 0)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
+			(uuid "50db730d-0662-4dde-9148-688839f61ac4")
+		)
+		(pad "3" smd roundrect
+			(at -1.1375 0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "HAND_INC_B")
+			(pinfunction "A_3")
+			(pintype "bidirectional")
+			(uuid "bd34f613-790c-45d5-9c33-780cc833abf0")
+		)
+		(pad "4" smd roundrect
+			(at 1.1375 0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "HAND_DIR")
+			(pinfunction "B_4")
+			(pintype "bidirectional")
+			(uuid "62f70d42-21d2-4cc4-918f-d7efeb9b59f6")
+		)
+		(pad "5" smd roundrect
+			(at 1.1375 0)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U7-DIR)")
+			(pinfunction "DIR_5")
+			(pintype "input")
+			(uuid "3fcf15fc-a71f-4c93-ba29-9545d4db177b")
+		)
+		(pad "6" smd roundrect
+			(at 1.1375 -0.95)
+			(size 1.325 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "3V3")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
+			(uuid "ffb08793-c4c1-4bf1-a6cb-de88be7880b7")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "d2c40454-97a6-400e-9a89-1f74aad1d115")
+		(at 217.659 115.563)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R5"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "ac4e12eb-513b-4d78-9be2-4961194aa05b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "388618c7-dcf2-481d-b922-0831f40948ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8a355de-0824-4167-a127-a3e9eb262458")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6b83c2d-6e89-49ff-a5d2-b2d4bf3dd70b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bd94b629-135f-4a70-a457-47833b57e02e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/b72fb8ef-4cdc-46b5-9289-178b699f5f8c/7ac0d95f-6926-471f-8a47-1ea0085eef47")
+		(sheetname "/Knobs/")
+		(sheetfile "Knobs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c7734e72-a82d-4736-b7e6-0d1ba364b46b")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2b7e4930-e884-4930-b48a-e5a5fc7f24b7")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "28aff6e1-bda6-4947-a17a-0b4aa6cf7f8a")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b1461e43-813d-4102-9217-f19cdb29f542")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "d2ad4b45-b533-4fff-b764-994b5229a779")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R5-Pad1)")
+			(pintype "passive")
+			(uuid "41950373-6cff-413d-87b2-b6abfae0af97")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "113d17f2-c8e6-4f75-aca5-703cf994e66d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17964,7 +19814,7 @@
 			(at -8.75 3.18)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "KEY_7")
+			(net "KNOB_2")
 			(pinfunction "IO25_10")
 			(pintype "bidirectional")
 			(uuid "2b877780-f53c-455b-ad65-f6b8d4b1749c")
@@ -18090,9 +19940,9 @@
 			(at 5.72 9.51 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "KNOB_1")
+			(net "unconnected-(U1-IO2-Pad24)")
 			(pinfunction "IO2_24")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "40426282-1432-4be1-929d-d2b061e5191a")
 		)
 		(pad "25" smd rect
@@ -18108,7 +19958,7 @@
 			(at 8.75 6.99)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "KNOB_2")
+			(net "HAND_INT")
 			(pinfunction "IO4_26")
 			(pintype "bidirectional")
 			(uuid "0da798dd-6a81-4e2a-8f5a-cfd779a2f45e")
@@ -18155,7 +20005,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-IO19-Pad31)")
 			(pinfunction "IO19_31")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "29c95663-b8c1-4b91-a1f4-d3761dd96c2a")
 		)
 		(pad "32" smd rect
@@ -18180,9 +20030,9 @@
 			(at 8.75 -3.17)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "HAND_INT")
+			(net "unconnected-(U1-RXD0{slash}IO3-Pad34)")
 			(pinfunction "RXD0/IO3_34")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8a53882d-6402-4585-8600-737030f4f0db")
 		)
 		(pad "35" smd rect
@@ -18207,7 +20057,7 @@
 			(at 8.75 -6.98)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "KEY_6")
+			(net "KNOB_1")
 			(pinfunction "IO23_37")
 			(pintype "bidirectional")
 			(uuid "8edb7eec-043e-41f7-8596-62aff710a13a")
@@ -18501,6 +20351,164 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-WROOM-32.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "e9056893-7899-45bf-8076-4aa93f8cfedb")
+		(at 217.659 120.583)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R13"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "b62ba1fb-22c0-4ed2-b47b-d35728fe2d33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "79650bd4-955f-4664-b44e-95bac942ac54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd3dc586-c79e-4007-bf49-18d4840c7d23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49d3fdcf-d014-491b-956a-b3cb72a903dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "647da1e2-c744-4f7c-836e-98117f56cb41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/b72fb8ef-4cdc-46b5-9289-178b699f5f8c/7cc69ef2-da94-403c-be19-be886b6b81cb")
+		(sheetname "/Knobs/")
+		(sheetfile "Knobs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c562643c-e1be-4719-af26-c86148d5d6ba")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0c5ebc51-71b7-4365-82a3-8821bc245501")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6dc07389-c985-4a1b-bf01-36a8a264df1f")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "6ff7997b-b445-4539-af9a-34e475321db1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "0734f01b-81ce-4f13-a655-2ce45ad47ca5")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "3V3")
+			(pintype "passive")
+			(uuid "8d1ca052-1f40-4948-b6bb-3c613739263e")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R13-Pad2)")
+			(pintype "passive")
+			(uuid "47ee2d51-2283-44f4-a9ed-4c3309207728")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19469,10 +21477,10 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+	(footprint "CustomFooties:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "fc94255a-356d-454b-b23b-048ee0fb84b2")
-		(at 298.083 154.527)
+		(at 131.826 102.87)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW16"
@@ -19486,7 +21494,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SET_SPLN"
 			(at -2.54 12.954 0)
 			(layer "F.Fab")
 			(uuid "4ced0afa-e9ec-46fd-b470-2ea293b2d916")
@@ -19528,7 +21536,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9a507429-5bbd-4ddb-92af-fc63be7bab54")
+			(uuid "5f8cdf04-7af6-4769-a6cb-099741c6b00f")
 			(effects
 				(font
 					(size 1 1)
@@ -19539,6 +21547,12 @@
 		(path "/f075bdc1-5939-4606-afd0-f99300daf604/dc1c85c0-a8a0-4013-9eb8-77c8db696b60")
 		(sheetname "/KeyPad/")
 		(sheetfile "KeyPad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19756,15 +21770,15 @@
 			(uuid "07728d6b-481f-4f8d-97c4-98b644795315")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
+		(model "${KIPRJMOD}/RK61 - Cherry MX Switch.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -135.9 35 -15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 6 -0 -180)
 			)
 		)
 	)
