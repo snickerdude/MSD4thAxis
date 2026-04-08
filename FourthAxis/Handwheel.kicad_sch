@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "e1856425-dff5-4113-8611-fef2003175eb")
-	(paper "A4")
+	(paper "A5")
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
@@ -854,7 +854,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 78.74) (xy 88.9 81.28)
+			(xy 104.14 64.77) (xy 104.14 67.31)
 		)
 		(stroke
 			(width 0)
@@ -864,7 +864,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 96.52) (xy 76.2 96.52)
+			(xy 87.63 82.55) (xy 91.44 82.55)
 		)
 		(stroke
 			(width 0)
@@ -874,7 +874,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 53.34) (xy 99.06 53.34)
+			(xy 111.76 39.37) (xy 115.57 39.37)
 		)
 		(stroke
 			(width 0)
@@ -884,7 +884,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 101.6) (xy 86.36 104.14)
+			(xy 101.6 87.63) (xy 101.6 90.17)
 		)
 		(stroke
 			(width 0)
@@ -894,7 +894,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 53.34) (xy 74.93 53.34)
+			(xy 81.28 39.37) (xy 91.44 39.37)
 		)
 		(stroke
 			(width 0)
@@ -904,7 +904,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 58.42) (xy 74.93 58.42)
+			(xy 87.63 44.45) (xy 91.44 44.45)
 		)
 		(stroke
 			(width 0)
@@ -914,7 +914,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 76.2) (xy 50.8 76.2)
+			(xy 63.5 62.23) (xy 66.04 62.23)
 		)
 		(stroke
 			(width 0)
@@ -924,7 +924,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 40.64) (xy 87.63 43.18)
+			(xy 104.14 26.67) (xy 104.14 29.21)
 		)
 		(stroke
 			(width 0)
@@ -934,7 +934,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 76.2 91.44)
+			(xy 81.28 77.47) (xy 91.44 77.47)
 		)
 		(stroke
 			(width 0)
@@ -944,7 +944,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 91.44) (xy 100.33 91.44)
+			(xy 111.76 77.47) (xy 115.57 77.47)
 		)
 		(stroke
 			(width 0)
@@ -954,7 +954,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 78.74) (xy 83.82 81.28)
+			(xy 99.06 64.77) (xy 99.06 67.31)
 		)
 		(stroke
 			(width 0)
@@ -964,7 +964,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 96.52) (xy 64.77 96.52)
+			(xy 76.2 82.55) (xy 80.01 82.55)
 		)
 		(stroke
 			(width 0)
@@ -974,7 +974,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 40.64) (xy 82.55 43.18)
+			(xy 99.06 26.67) (xy 99.06 29.21)
 		)
 		(stroke
 			(width 0)
@@ -984,7 +984,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 58.42) (xy 63.5 58.42)
+			(xy 76.2 44.45) (xy 80.01 44.45)
 		)
 		(stroke
 			(width 0)
@@ -994,7 +994,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 72.39) (xy 50.8 72.39)
+			(xy 63.5 58.42) (xy 66.04 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1004,7 +1004,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 63.5) (xy 85.09 66.04)
+			(xy 101.6 49.53) (xy 101.6 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1014,7 +1014,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 83.82 78.74 90)
+		(at 99.06 64.77 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1024,7 +1024,7 @@
 		)
 		(uuid "0f66d272-7143-4bd4-b70b-21fd86289b64")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.82 73.4567 90)
+			(at 99.06 59.4867 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1038,7 +1038,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 59.69 58.42 180)
+		(at 76.2 44.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1048,7 +1048,7 @@
 		)
 		(uuid "18bec3c7-ca3b-4fd9-9791-a0483ad0bb8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.4067 58.42 0)
+			(at 70.9167 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1062,7 +1062,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 87.63 40.64 90)
+		(at 104.14 26.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1072,7 +1072,7 @@
 		)
 		(uuid "4a4e50eb-75b3-4882-ac3b-b5e908a17714")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 34.1472 90)
+			(at 104.14 20.1772 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1086,7 +1086,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 82.55 40.64 90)
+		(at 99.06 26.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1096,7 +1096,7 @@
 		)
 		(uuid "7d71b5b7-bca1-4aa9-a230-8c38ede0b947")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.55 35.3567 90)
+			(at 99.06 21.3867 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1110,7 +1110,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 88.9 78.74 90)
+		(at 104.14 64.77 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1120,7 +1120,7 @@
 		)
 		(uuid "ac874258-a5a9-414a-a957-8333968a8743")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 72.2472 90)
+			(at 104.14 58.2772 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1134,7 +1134,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 50.8 72.39 0)
+		(at 66.04 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1144,7 +1144,7 @@
 		)
 		(uuid "bee2c797-c20a-41ff-8625-42e56c17c88d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.0833 72.39 0)
+			(at 71.3233 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1158,7 +1158,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 50.8 76.2 0)
+		(at 66.04 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1168,7 +1168,7 @@
 		)
 		(uuid "eac98c91-7567-4632-9f3e-9ee1293e1474")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.2928 76.2 0)
+			(at 72.5328 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1182,7 +1182,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 60.96 96.52 180)
+		(at 76.2 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1192,7 +1192,7 @@
 		)
 		(uuid "fa436ec4-94f3-49e4-82ae-b48f1da78aa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.6767 96.52 0)
+			(at 70.9167 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1206,7 +1206,7 @@
 	)
 	(hierarchical_label "ENC_A_IN"
 		(shape input)
-		(at 64.77 53.34 180)
+		(at 81.28 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1217,7 +1217,7 @@
 	)
 	(hierarchical_label "HAND_INT"
 		(shape output)
-		(at 99.06 53.34 0)
+		(at 115.57 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1228,7 +1228,7 @@
 	)
 	(hierarchical_label "HAND_DIR"
 		(shape output)
-		(at 100.33 91.44 0)
+		(at 115.57 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1239,7 +1239,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 48.26 76.2 180)
+		(at 63.5 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1250,7 +1250,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 48.26 72.39 180)
+		(at 63.5 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1261,7 +1261,7 @@
 	)
 	(hierarchical_label "ENC_B_IN"
 		(shape input)
-		(at 66.04 91.44 180)
+		(at 81.28 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1272,7 +1272,7 @@
 	)
 	(symbol
 		(lib_id "Logic_LevelTranslator:SN74LVC1T45DBV")
-		(at 86.36 91.44 0)
+		(at 101.6 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1283,7 +1283,7 @@
 		(fields_autoplaced yes)
 		(uuid "815d8706-0aef-4847-accb-4087213e7d42")
 		(property "Reference" "U7"
-			(at 104.14 85.0198 0)
+			(at 119.38 71.0498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1293,7 +1293,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1T45DBV"
-			(at 104.14 87.5598 0)
+			(at 119.38 73.5898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1303,7 +1303,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 86.36 102.87 0)
+			(at 101.6 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1314,7 +1314,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
-			(at 63.5 107.95 0)
+			(at 78.74 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1325,7 +1325,7 @@
 			)
 		)
 		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
-			(at 86.36 91.44 0)
+			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1336,7 +1336,7 @@
 			)
 		)
 		(property "Digikey" "74LVC1T45W6-7DICT-ND"
-			(at 86.36 91.44 0)
+			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1375,7 +1375,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 66.04 0)
+		(at 101.6 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1386,7 +1386,7 @@
 		(fields_autoplaced yes)
 		(uuid "89b864e9-e442-4e26-ada7-4c0ac6ce72c8")
 		(property "Reference" "#PWR05"
-			(at 85.09 72.39 0)
+			(at 101.6 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1397,7 +1397,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 71.12 0)
+			(at 101.6 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1407,7 +1407,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 66.04 0)
+			(at 101.6 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1418,7 +1418,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 66.04 0)
+			(at 101.6 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1429,7 +1429,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 66.04 0)
+			(at 101.6 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1453,7 +1453,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 68.58 96.52 90)
+		(at 83.82 82.55 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -1464,7 +1464,7 @@
 		(dnp no)
 		(uuid "c16e974d-ca85-42a5-ab04-2f29900d35ae")
 		(property "Reference" "R12"
-			(at 68.58 102.87 90)
+			(at 83.82 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1474,7 +1474,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 68.58 100.33 90)
+			(at 83.82 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1484,7 +1484,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 68.834 97.536 90)
+			(at 84.074 83.566 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1495,7 +1495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 96.52 0)
+			(at 83.82 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1506,7 +1506,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 68.58 96.52 0)
+			(at 83.82 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1533,7 +1533,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 67.31 58.42 90)
+		(at 83.82 44.45 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -1544,7 +1544,7 @@
 		(dnp no)
 		(uuid "c87246a8-03d9-4cc1-8b9d-b47db47d233f")
 		(property "Reference" "R11"
-			(at 67.31 64.77 90)
+			(at 83.82 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1554,7 +1554,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 67.31 62.23 90)
+			(at 83.82 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1564,7 +1564,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 67.564 59.436 90)
+			(at 84.074 45.466 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1575,7 +1575,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 58.42 0)
+			(at 83.82 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1586,7 +1586,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 67.31 58.42 0)
+			(at 83.82 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1613,7 +1613,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 104.14 0)
+		(at 101.6 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1624,7 +1624,7 @@
 		(fields_autoplaced yes)
 		(uuid "c91a79e1-c050-4648-862f-3206232d04a1")
 		(property "Reference" "#PWR06"
-			(at 86.36 110.49 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1635,7 +1635,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 109.22 0)
+			(at 101.6 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1645,7 +1645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 104.14 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1656,7 +1656,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 104.14 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,7 +1667,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 104.14 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1691,7 +1691,7 @@
 	)
 	(symbol
 		(lib_id "Logic_LevelTranslator:SN74LVC1T45DBV")
-		(at 85.09 53.34 0)
+		(at 101.6 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1702,7 +1702,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1be984c-cd9a-4f70-aa03-8f82bf9e77a0")
 		(property "Reference" "U6"
-			(at 102.87 46.9198 0)
+			(at 119.38 32.9498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1712,7 +1712,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1T45DBV"
-			(at 102.87 49.4598 0)
+			(at 119.38 35.4898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1722,7 +1722,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 85.09 64.77 0)
+			(at 101.6 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1733,7 +1733,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
-			(at 62.23 69.85 0)
+			(at 78.74 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1744,7 +1744,7 @@
 			)
 		)
 		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
-			(at 85.09 53.34 0)
+			(at 101.6 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1755,7 +1755,7 @@
 			)
 		)
 		(property "Digikey" "74LVC1T45W6-7DICT-ND"
-			(at 85.09 53.34 0)
+			(at 101.6 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -3407,6 +3407,52 @@
 		)
 	)
 	(sheet
+		(at 204.47 125.73)
+		(size 34.29 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8b37deee-9195-4f8e-b247-4b42a620bb4c")
+		(property "Sheetname" "EncoderOut"
+			(at 204.47 125.0184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "EncoderOut.kicad_sch"
+			(at 204.47 146.6346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FourthAxis"
+				(path "/32b0d774-33bf-42ba-9d9e-f33866433972"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 204.47 114.3)
 		(size 34.29 5.08)
 		(exclude_from_sim no)
