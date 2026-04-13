@@ -427,7 +427,11 @@
         "uuid": "32b0d774-33bf-42ba-9d9e-f33866433972"
       }
     ],
+<<<<<<< HEAD
+    "used_designators": "",
+=======
     "used_designators": "U12",
+>>>>>>> 13b88abc52236c69c12cbd15b2bb765d9cebe060
     "variants": []
   },
   "sheets": [
