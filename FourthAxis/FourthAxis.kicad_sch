@@ -1799,6 +1799,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 128.27) (xy 204.47 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36a9a3cc-d55e-4965-8aff-53449a3975c5")
+	)
+	(wire
+		(pts
 			(xy 199.39 118.11) (xy 204.47 118.11)
 		)
 		(stroke
@@ -1806,6 +1816,16 @@
 			(type default)
 		)
 		(uuid "3b232050-e4c8-46e6-876c-2fa84d571cce")
+	)
+	(wire
+		(pts
+			(xy 199.39 130.81) (xy 204.47 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bdf8ccc-2976-4f4b-ad8e-2b7d28cd195e")
 	)
 	(wire
 		(pts
@@ -1909,35 +1929,23 @@
 	)
 	(wire
 		(pts
-<<<<<<< HEAD
 			(xy 237.49 68.58) (xy 255.27 68.58)
-=======
-			(xy 199.39 130.81) (xy 204.47 130.81)
->>>>>>> 308588f1936f71d8641629e1251a7944d84cb57b
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-<<<<<<< HEAD
 		(uuid "6f3726a2-4153-4480-b80e-41797f5c4850")
 	)
 	(wire
 		(pts
 			(xy 199.39 66.04) (xy 204.47 66.04)
-=======
-		(uuid "71f47ce2-4213-4259-8a00-92e8bb593c02")
-	)
-	(wire
-		(pts
-			(xy 199.39 64.77) (xy 204.47 64.77)
->>>>>>> 308588f1936f71d8641629e1251a7944d84cb57b
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "74675cb3-a6ed-4e65-b7d1-acaa6de9bce5")
+		(uuid "71f47ce2-4213-4259-8a00-92e8bb593c02")
 	)
 	(wire
 		(pts
@@ -2131,16 +2139,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 33.02) (xy 255.27 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfdadb28-e111-4c8a-baee-c587abb98890")
-	)
-	(wire
-		(pts
 			(xy 199.39 140.97) (xy 204.47 140.97)
 		)
 		(stroke
@@ -2148,6 +2146,16 @@
 			(type default)
 		)
 		(uuid "bc801411-b987-4b6a-a413-3d1a7b8a3922")
+	)
+	(wire
+		(pts
+			(xy 238.76 33.02) (xy 255.27 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfdadb28-e111-4c8a-baee-c587abb98890")
 	)
 	(wire
 		(pts
@@ -2271,21 +2279,13 @@
 	)
 	(wire
 		(pts
-<<<<<<< HEAD
 			(xy 199.39 25.4) (xy 204.47 25.4)
-=======
-			(xy 199.39 128.27) (xy 204.47 128.27)
->>>>>>> 308588f1936f71d8641629e1251a7944d84cb57b
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-<<<<<<< HEAD
 		(uuid "fd3a7840-6482-4a29-bf23-c59dce239232")
-=======
-		(uuid "f7022807-e6e9-4213-bf25-e30b30308c7c")
->>>>>>> 308588f1936f71d8641629e1251a7944d84cb57b
 	)
 	(wire
 		(pts
@@ -2296,33 +2296,6 @@
 			(type default)
 		)
 		(uuid "fe35330c-a6e8-4031-8f01-468add0414ce")
-	)
-	(global_label "ENCOD_B"
-		(shape input)
-<<<<<<< HEAD
-		(at 199.39 25.4 180)
-=======
-		(at 59.69 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "075c725b-8de0-4311-8f25-0460e9e6f367")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.1053 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
 	(global_label "MOTOR_STP"
 		(shape output)
@@ -2337,31 +2310,6 @@
 		(uuid "0c8e5c33-ce3f-421e-8b75-2608df55f70e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 186.2943 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "HAND_INC_A"
-		(shape input)
-		(at 199.39 68.58 180)
->>>>>>> 308588f1936f71d8641629e1251a7944d84cb57b
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "03250373-2397-42f7-9e8f-1f89cf32fa58")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.8172 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3346,6 +3294,30 @@
 		(uuid "dc4583f8-c052-437b-93d3-01ba6682fc1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.7214 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ENCOD_B"
+		(shape input)
+		(at 199.39 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd142aba-9772-4243-8875-97f99b0dbfa7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.9747 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
