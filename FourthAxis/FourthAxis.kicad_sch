@@ -1891,7 +1891,7 @@
 		)
 	)
 	(global_label "KEY_C"
-		(shape input)
+		(shape output)
 		(at 151.13 78.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1902,7 +1902,7 @@
 		)
 		(uuid "3a2c2865-204f-4c60-a186-24cd83d51cfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.8604 78.74 0)
+			(at 159.2062 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1915,7 +1915,7 @@
 		)
 	)
 	(global_label "STEP_DIR"
-		(shape input)
+		(shape output)
 		(at 151.13 106.68 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1926,7 +1926,7 @@
 		)
 		(uuid "40982b62-87d3-4b93-8978-20acad7f9f9e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.8237 106.68 0)
+			(at 162.1695 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2179,7 +2179,7 @@
 		)
 	)
 	(global_label "MOTOR_STP"
-		(shape input)
+		(shape output)
 		(at 151.13 104.14 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2190,7 +2190,7 @@
 		)
 		(uuid "8a4e0813-be5e-4f44-8353-f5d71e3c4b5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.8799 104.14 0)
+			(at 164.2257 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2203,7 +2203,7 @@
 		)
 	)
 	(global_label "SCREEN_CLK"
-		(shape input)
+		(shape bidirectional)
 		(at 151.13 96.52 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2214,7 +2214,7 @@
 		)
 		(uuid "8aadab2b-e6c5-409d-9f35-de5d8083d94a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.0289 96.52 0)
+			(at 166.3272 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2275,7 +2275,7 @@
 		)
 	)
 	(global_label "MOTOR_EN"
-		(shape input)
+		(shape output)
 		(at 151.13 109.22 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2286,7 +2286,7 @@
 		)
 		(uuid "9286041f-8f9e-4419-8fdd-4ed816179f2c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.9123 109.22 0)
+			(at 163.2581 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2371,7 +2371,7 @@
 		)
 	)
 	(global_label "SCREEN_SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 151.13 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2382,7 +2382,7 @@
 		)
 		(uuid "a31bcd4c-a083-445a-9fe0-3d5bf336a4ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.0289 93.98 0)
+			(at 166.3272 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2419,7 +2419,7 @@
 		)
 	)
 	(global_label "ENCOD_A"
-		(shape output)
+		(shape input)
 		(at 151.13 114.3 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2443,7 +2443,7 @@
 		)
 	)
 	(global_label "KEY_B"
-		(shape input)
+		(shape output)
 		(at 151.13 76.2 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2454,7 +2454,7 @@
 		)
 		(uuid "be7de555-5cb9-4a47-9a83-358e105cfa1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.8604 76.2 0)
+			(at 159.2062 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2659,7 +2659,7 @@
 		)
 	)
 	(global_label "KEY_A"
-		(shape input)
+		(shape output)
 		(at 151.13 73.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2670,7 +2670,7 @@
 		)
 		(uuid "df76a2bc-af90-49ce-beb8-6f9962b32e0a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.679 73.66 0)
+			(at 159.0248 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3422,7 +3422,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "8b37deee-9195-4f8e-b247-4b42a620bb4c")
-		(property "Sheetname" "EncoderOut"
+		(property "Sheetname" "MotorDriveOut"
 			(at 204.47 125.0184 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3433,7 +3433,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "EncoderOut.kicad_sch"
+		(property "Sheetfile" "MotorDriveOut.kicad_sch"
 			(at 204.47 146.6346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3514,6 +3514,52 @@
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 204.47 151.13)
+		(size 34.29 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e98c5fd8-72a5-4190-861e-3e1a7ef76ea5")
+		(property "Sheetname" "EncoderIn"
+			(at 204.47 150.4184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "EncoderIn.kicad_sch"
+			(at 204.47 164.4146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FourthAxis"
+				(path "/32b0d774-33bf-42ba-9d9e-f33866433972"
+					(page "7")
 				)
 			)
 		)
