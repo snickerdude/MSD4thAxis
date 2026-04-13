@@ -5721,7 +5721,7 @@
 		)
 	)
 	(hierarchical_label "5V"
-		(shape input)
+		(shape output)
 		(at 134.62 68.58 0)
 		(effects
 			(font
@@ -5732,7 +5732,7 @@
 		(uuid "49720684-08f0-4c8f-b75c-8406930f3148")
 	)
 	(hierarchical_label "3V3"
-		(shape input)
+		(shape output)
 		(at 247.65 68.58 0)
 		(effects
 			(font
