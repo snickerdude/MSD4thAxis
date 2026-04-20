@@ -297,14 +297,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -423,17 +419,21 @@
     "top_level_sheets": [
       {
         "filename": "FourthAxis.kicad_sch",
-        "name": "FourthAxis",
+        "name": "Root",
         "uuid": "32b0d774-33bf-42ba-9d9e-f33866433972"
       }
     ],
+<<<<<<< HEAD
     "used_designators": "U12",
+=======
+    "used_designators": "J3-4,#PWR18-19",
+>>>>>>> da2e9f45866d75bf7fae2f524c20c0335a7e1773
     "variants": []
   },
   "sheets": [
     [
       "32b0d774-33bf-42ba-9d9e-f33866433972",
-      "FourthAxis"
+      "Root"
     ],
     [
       "f075bdc1-5939-4606-afd0-f99300daf604",
