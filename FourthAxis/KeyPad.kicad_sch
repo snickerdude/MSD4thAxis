@@ -4769,7 +4769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 129.54 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4825,6 +4825,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 129.54 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 129.54 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4928,6 +4939,17 @@
 				)
 			)
 		)
+		(property "digikey" "74HC237DCT-ND"
+			(at 63.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "16"
 			(uuid "4063b272-3e32-4948-acdc-f202c20b0883")
 		)
@@ -5017,7 +5039,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 172.72 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5083,6 +5105,17 @@
 				)
 			)
 		)
+		(property "digikey" "641-1458-1-ND"
+			(at 172.72 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9010f77b-8047-4a27-ac96-34df6d285f71")
 		)
@@ -5109,7 +5142,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ae1589c-a693-4366-abd7-ccb617983c44")
-		(property "Reference" "R9"
+		(property "Reference" "R1"
 			(at 33.782 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5175,6 +5208,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 39.37 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "97ed7888-e195-4225-acca-16285c26e5fd")
 		)
@@ -5184,7 +5228,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R9")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5222,7 +5266,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 107.95 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5278,6 +5322,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 107.95 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 107.95 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5335,7 +5390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 215.9 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5391,6 +5446,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 215.9 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 215.9 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5448,7 +5514,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 151.13 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5504,6 +5570,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 151.13 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 151.13 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6016,7 +6093,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 237.49 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6072,6 +6149,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 237.49 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 237.49 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6207,7 +6295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 194.31 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6263,6 +6351,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 194.31 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 194.31 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6482,7 +6581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6723cfab-9d9d-4efb-ac06-4161d7e686e6")
-		(property "Reference" "R10"
+		(property "Reference" "R5"
 			(at 81.28 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6548,6 +6647,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 78.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3bba58f5-aa06-4e1b-af3a-c6f5c67be4ae")
 		)
@@ -6557,7 +6667,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R10")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6595,7 +6705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 237.49 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6651,6 +6761,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 237.49 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 237.49 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6708,7 +6829,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 151.13 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6774,6 +6895,17 @@
 				)
 			)
 		)
+		(property "digikey" "641-1458-1-ND"
+			(at 151.13 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "76d1e53d-dec8-4c53-b95c-4ef02f9f94f5")
 		)
@@ -6801,7 +6933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75540e3d-7411-402e-9991-abecdd885b0e")
-		(property "Reference" "R8"
+		(property "Reference" "R2"
 			(at 44.45 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6867,6 +6999,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 41.91 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ddd641a8-244b-440b-baf8-b0be183337cf")
 		)
@@ -6876,7 +7019,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R8")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6914,7 +7057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 215.9 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6970,6 +7113,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 215.9 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 215.9 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7027,7 +7181,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 237.49 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7083,6 +7237,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 237.49 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 237.49 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7140,7 +7305,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 215.9 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7196,6 +7361,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 215.9 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 215.9 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7344,7 +7520,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 129.54 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7400,6 +7576,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 129.54 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 129.54 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7548,7 +7735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 151.13 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7604,6 +7791,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 151.13 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 151.13 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7661,7 +7859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 172.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7717,6 +7915,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 172.72 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 172.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7774,7 +7983,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 237.49 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7830,6 +8039,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 237.49 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 237.49 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7887,7 +8107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 107.95 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7943,6 +8163,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 107.95 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 107.95 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8091,7 +8322,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 215.9 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -8147,6 +8378,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 215.9 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 215.9 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -8275,7 +8517,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6deece3-f1b5-44a5-91dd-69313a77711e")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 82.55 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8341,6 +8583,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 80.01 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3bffc8db-680d-4f43-b26b-33ead21e36ff")
 		)
@@ -8350,7 +8603,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8661,7 +8914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 151.13 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8717,6 +8970,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 151.13 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 151.13 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8865,7 +9129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 194.31 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8921,6 +9185,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 194.31 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 194.31 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -9049,7 +9324,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd1c45f1-db4a-4c90-82ad-ff8a22f49dab")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 73.66 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9115,6 +9390,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 71.12 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "71398edc-c3f2-47dc-8905-10b5f4d95be8")
 		)
@@ -9124,7 +9410,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9162,7 +9448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 194.31 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -9218,6 +9504,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 194.31 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 194.31 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -9535,7 +9832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 129.54 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9601,6 +9898,17 @@
 				)
 			)
 		)
+		(property "digikey" "641-1458-1-ND"
+			(at 129.54 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d9407703-a1e9-46e6-bc2f-82f561376cd8")
 		)
@@ -9628,7 +9936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1f60fd7-7390-445b-aa1d-f7ae3922511b")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 91.44 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9694,6 +10002,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 88.9 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d48668a3-9322-43ae-920e-7a0531a53a67")
 		)
@@ -9703,7 +10022,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R3")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9994,7 +10313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eaa15e67-0575-4d81-8456-c5aedd034ecc")
-		(property "Reference" "R4"
+		(property "Reference" "R8"
 			(at 100.33 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10060,6 +10379,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 97.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "04e4af7c-1891-4db1-b565-37235b745702")
 		)
@@ -10069,7 +10399,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R4")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10107,7 +10437,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 107.95 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -10163,6 +10493,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 107.95 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 107.95 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -10311,7 +10652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 107.95 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10367,6 +10708,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 107.95 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 107.95 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10515,7 +10867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 194.31 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -10571,6 +10923,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 194.31 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 194.31 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -10628,7 +10991,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 129.54 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -10684,6 +11047,17 @@
 			)
 		)
 		(property "Digikey Part Number" ""
+			(at 129.54 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
 			(at 129.54 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -10812,7 +11186,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc3208bc-4a4b-496f-870e-d1e9efd4d2eb")
-		(property "Reference" "R7"
+		(property "Reference" "R3"
 			(at 52.07 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10878,6 +11252,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "68422c64-d0c2-46c1-873b-7f7c78763bea")
 		)
@@ -10887,7 +11272,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/f075bdc1-5939-4606-afd0-f99300daf604"
-					(reference "R7")
+					(reference "R3")
 					(unit 1)
 				)
 			)

@@ -5776,7 +5776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22056682-b27b-490f-b69a-066e9f79e640")
-		(property "Reference" "R17"
+		(property "Reference" "R12"
 			(at 186.69 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,7 +5798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.166 76.454 90)
 			(hide yes)
 			(show_name no)
@@ -5831,7 +5831,7 @@
 				)
 			)
 		)
-		(property "digikey" "311-10.0KLRCT-ND"
+		(property "digikey" "311-10.0KHRCT-ND"
 			(at 184.15 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5851,7 +5851,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/39636035-34df-404d-b7c8-3e3bf34934f2"
-					(reference "R17")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6074,7 +6074,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 213.995 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6098,6 +6098,17 @@
 		)
 		(property "Description" "30V 3A Schottky Barrier Rectifier Diode, DO-201AD"
 			(at 218.44 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
+			(at 218.44 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6156,7 +6167,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
+		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm"
 			(at 45.72 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6189,7 +6200,7 @@
 				)
 			)
 		)
-		(property "digikey" "493-UUG1H471MNJ6MSCT-ND"
+		(property "digikey" "P5185-ND"
 			(at 45.72 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6432,7 +6443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
+		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm"
 			(at 158.75 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6465,7 +6476,7 @@
 				)
 			)
 		)
-		(property "digikey" "493-UUG1H471MNJ6MSCT-ND"
+		(property "digikey" "P5185-ND"
 			(at 158.75 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6525,7 +6536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 100.965 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6549,6 +6560,17 @@
 		)
 		(property "Description" "30V 3A Schottky Barrier Rectifier Diode, DO-201AD"
 			(at 105.41 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "641-1458-1-ND"
+			(at 105.41 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6607,7 +6629,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 173.6852 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6640,7 +6662,7 @@
 				)
 			)
 		)
-		(property "digikey" "2679-AGC0805X7R500-105KNETR-ND"
+		(property "digikey" "1276-1184-1-ND"
 			(at 172.72 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6756,7 +6778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a93254-cc24-4310-81d7-cda9d3914aab")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 88.9 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6820,6 +6842,17 @@
 				)
 			)
 		)
+		(property "digikey" "4518-XL1509-5.0CT-ND"
+			(at 88.9 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "0e26bb58-d824-419d-ad58-833fb5c25c01")
 		)
@@ -6847,7 +6880,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/39636035-34df-404d-b7c8-3e3bf34934f2"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -6865,7 +6898,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b70f0fd5-4ae5-4329-8d19-9d7ed26657e1")
-		(property "Reference" "R16"
+		(property "Reference" "R11"
 			(at 73.66 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6887,7 +6920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 72.136 76.454 90)
 			(hide yes)
 			(show_name no)
@@ -6920,7 +6953,7 @@
 				)
 			)
 		)
-		(property "digikey" "311-10.0KLRCT-ND"
+		(property "digikey" "311-10.0KHRCT-ND"
 			(at 71.12 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6940,7 +6973,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/39636035-34df-404d-b7c8-3e3bf34934f2"
-					(reference "R16")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7058,7 +7091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.6552 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -7091,7 +7124,7 @@
 				)
 			)
 		)
-		(property "digikey" "2679-AGC0805X7R500-105KNETR-ND"
+		(property "digikey" "1276-1184-1-ND"
 			(at 59.69 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7129,7 +7162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4c2fc51-32d4-4a2f-9c2c-26cca50a25d5")
-		(property "Reference" "U4"
+		(property "Reference" "U6"
 			(at 201.93 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7193,6 +7226,17 @@
 				)
 			)
 		)
+		(property "digikey" "4518-XL1509-3.3CT-ND"
+			(at 201.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "400566de-d028-457a-8dd0-c5947ce75b5f")
 		)
@@ -7220,7 +7264,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/39636035-34df-404d-b7c8-3e3bf34934f2"
-					(reference "U4")
+					(reference "U6")
 					(unit 1)
 				)
 			)

@@ -1727,6 +1727,17 @@
 				)
 			)
 		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 74.93 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e06de5e3-6af1-493c-9378-a5a759e70614")
 		)
@@ -1832,7 +1843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42d59dd2-f0e1-41bf-944c-eb6f7c136488")
-		(property "Reference" "U8"
+		(property "Reference" "U7"
 			(at 110.49 31.6798 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1896,6 +1907,17 @@
 				)
 			)
 		)
+		(property "digikey" "296-16843-1-ND"
+			(at 92.71 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "7eaf3423-3919-4a59-a66f-da708673a294")
 		)
@@ -1917,7 +1939,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/8b37deee-9195-4f8e-b247-4b42a620bb4c"
-					(reference "U8")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -1935,7 +1957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b855947-ca3b-4eb0-9625-c8da7724d249")
-		(property "Reference" "U9"
+		(property "Reference" "U8"
 			(at 110.49 76.1298 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1999,6 +2021,17 @@
 				)
 			)
 		)
+		(property "digikey" "296-16843-1-ND"
+			(at 92.71 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "814bca38-076f-46d7-8127-b34a5323e985")
 		)
@@ -2020,7 +2053,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/8b37deee-9195-4f8e-b247-4b42a620bb4c"
-					(reference "U9")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -2272,7 +2305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a951d337-cc63-4de0-b279-798cfd1914d7")
-		(property "Reference" "U11"
+		(property "Reference" "U10"
 			(at 207.01 120.5798 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2336,6 +2369,17 @@
 				)
 			)
 		)
+		(property "digikey" "296-16843-1-ND"
+			(at 189.23 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "5ecbd115-5fbf-42d5-88b1-b923993c48a1")
 		)
@@ -2357,7 +2401,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/8b37deee-9195-4f8e-b247-4b42a620bb4c"
-					(reference "U11")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -2375,7 +2419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca1054dc-35e8-412b-8a07-96d391e48df4")
-		(property "Reference" "U10"
+		(property "Reference" "U9"
 			(at 110.49 120.5798 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2439,6 +2483,17 @@
 				)
 			)
 		)
+		(property "digikey" "296-16843-1-ND"
+			(at 92.71 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "4c7c8818-a27c-440e-9c5e-f18f6311211a")
 		)
@@ -2460,7 +2515,7 @@
 		(instances
 			(project "FourthAxis"
 				(path "/32b0d774-33bf-42ba-9d9e-f33866433972/8b37deee-9195-4f8e-b247-4b42a620bb4c"
-					(reference "U10")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -2522,6 +2577,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 74.93 132.08 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2602,6 +2668,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 74.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "digikey" "311-10.0KHRCT-ND"
+			(at 74.93 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
