@@ -1978,17 +1978,6 @@
 				)
 			)
 		)
-		(property "digikey" "74LVC1T45W6-7DICT-ND"
-			(at 157.48 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "digikey" "296-16843-1-ND"
 			(at 157.48 49.53 0)
 			(hide yes)
@@ -2602,17 +2591,6 @@
 			)
 		)
 		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
-			(at 78.74 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "digikey" "74LVC1T45W6-7DICT-ND"
 			(at 78.74 49.53 0)
 			(hide yes)
 			(show_name no)
