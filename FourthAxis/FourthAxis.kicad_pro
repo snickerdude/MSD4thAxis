@@ -854,7 +854,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "./FabOut",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
