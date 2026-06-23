@@ -4962,7 +4962,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 129.54 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5232,7 +5232,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 172.72 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5459,7 +5459,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 107.95 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5583,7 +5583,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 215.9 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5707,7 +5707,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 151.13 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6364,7 +6364,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 237.49 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6566,7 +6566,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 194.31 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6976,7 +6976,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 237.49 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7193,7 +7193,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 151.13 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7421,7 +7421,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 215.9 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7545,7 +7545,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 237.49 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7669,7 +7669,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 215.9 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7884,7 +7884,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 129.54 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8099,7 +8099,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 151.13 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8223,7 +8223,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 172.72 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8347,7 +8347,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 237.49 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8471,7 +8471,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 107.95 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8686,7 +8686,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 215.9 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9371,7 +9371,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 151.13 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9586,7 +9586,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 194.31 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9905,7 +9905,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 194.31 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10289,7 +10289,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 129.54 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10894,7 +10894,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 107.95 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11109,7 +11109,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 107.95 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11324,7 +11324,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 194.31 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11448,7 +11448,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "1N5821"
 			(at 129.54 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)

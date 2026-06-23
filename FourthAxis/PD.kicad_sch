@@ -6729,7 +6729,7 @@
 				)
 			)
 		)
-		(property "digikey" "1276-1184-1-ND"
+		(property "digikey" "1292-0603X106M100CT-ND"
 			(at 64.77 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -7761,7 +7761,7 @@
 				)
 			)
 		)
-		(property "digikey" "1276-1184-1-ND"
+		(property "digikey" "1292-0603X106M100CT-ND"
 			(at 54.61 31.75 0)
 			(hide yes)
 			(show_name no)
