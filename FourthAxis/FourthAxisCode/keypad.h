@@ -1,7 +1,7 @@
 //#pragma once
 
-#ifndef MCP3562_H
-#define MCP3562_H
+#ifndef KEYPAD_H
+#define KEYPAD_H
 
 #include <Arduino.h>
 #include <vector>

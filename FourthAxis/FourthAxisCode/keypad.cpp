@@ -14,13 +14,14 @@ keypad::~keypad() {
 }
 
 void keypad::begin() {
-    // Configure coloum pins as outputs and row pins as inputs. 
-    for (uint8_t pin = KEY_A; pin <= KEY_C; pin++) {
-		pinMode(pin, OUTPUT);
+	// Configure coloum pins as outputs and row pins as inputs. 
+	for (uint8_t pin = KEY_A; pin <= KEY_C; pin++) {
+	pinMode(pin, OUTPUT);
 	}
 	for (uint8_t pin = KEY_1; pin <= KEY_4; pin++) {
 		pinMode(pin, INPUT_PULLDOWN);
 	}
+	Serial.println("Keypad setup success");
 }
 
 void keypad::update() {
