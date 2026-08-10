@@ -13,7 +13,7 @@ void encoder::begin(){
 	pinMode(_aPin, INPUT);
 	pinMode(_bPin, INPUT);
 	pinMode(_zPin, INPUT);
-	attachInterruptArg(digitalPinToInterrupt(_aPin), encoder::staticAisr, this, RISING);
+	attachInterruptArg(digitalPinToInterrupt(_aPin), encoder::staticAisr, this, FALLING);
 	if (_zPin != 100){
 		attachInterruptArg(digitalPinToInterrupt(_zPin), encoder::staticZisr, this, RISING);
 	}

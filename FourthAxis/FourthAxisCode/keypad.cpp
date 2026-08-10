@@ -1,5 +1,15 @@
 #include "keypad.h"
 
+
+/*
+//// Key map:
+//// x means no key assigned
+[1, 2, 3, x, set zero, return to zero, x
+4, 5, 6, x, set splines, next angle, x
+7, 8, 9, del, set angle abs, add angle inc, x
+decimal, 0, +-, enter, jog CCW, jog CW, x]
+*/
+
 keypad::keypad() {
     int totalKeys = 26;
     _keyStates = new bool[totalKeys]();
@@ -22,11 +32,14 @@ void keypad::begin() {
 		pinMode(pin, INPUT_PULLDOWN);
 	}
 	Serial.println("Keypad setup success");
+	
+	
 }
 
 void keypad::update() {
     
 }//11100000000000000000
+
 
 void keypad::scan() {
 	
