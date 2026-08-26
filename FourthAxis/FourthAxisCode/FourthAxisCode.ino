@@ -24,7 +24,7 @@ enum keymap{
   DOT,		NUM_0,	PLUS_MINUS,	ENTER,		JOG_CCW,			JOG_CW,				UNASGN_4
 };
 
-keymap Keymap == keymap::ENTER;
+//keymap Keymap == keymap::ENTER;
 
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
@@ -53,7 +53,7 @@ void loop(){
   Display.DC.hwPos = Handwheel._position;
   Display.DC.encPos = Encoder._position;
   Display.updateDisplay();
-  Serial.println(Keymap::ENTER);
+  //Serial.println(Keymap::ENTER);
   for (int i = 0; i < 8; i ++) {
     
     //Serial.println(0xFFE3FFFF + (i << 18), BIN);
@@ -63,5 +63,5 @@ void loop(){
     //  Serial.print(' ');
     //}
   }
-  //Serial.println("Its an esp32 bitch");
+  //Serial.println("Its an esp32 big chugnus");
   }
