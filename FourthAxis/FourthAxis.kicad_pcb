@@ -42420,20 +42420,8 @@
 			(justify left mirror)
 		)
 	)
-	(gr_text "GND"
-		(at 162.814 45.212 90)
-		(layer "B.SilkS")
-		(uuid "77f0b135-350e-45a4-bf8f-7a8c1eda78cb")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left mirror)
-		)
-	)
 	(gr_text "ENCZ-"
-		(at 165.354 45.339 90)
+		(at 162.814 45.339 90)
 		(layer "B.SilkS")
 		(uuid "5170f4ea-ae8e-4a3e-b0ee-98128b664782")
 		(effects
@@ -42445,9 +42433,21 @@
 		)
 	)
 	(gr_text "ENCZ+"
-		(at 167.894 45.212 90)
+		(at 165.354 45.212 90)
 		(layer "B.SilkS")
 		(uuid "5f8776f8-8ddd-438f-b666-74afeb38f46a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "ENCB-"
+		(at 167.894 45.212 90)
+		(layer "B.SilkS")
+		(uuid "1eb5fcb7-aa45-4690-875e-9cccd7125c44")
 		(effects
 			(font
 				(size 1 1)
