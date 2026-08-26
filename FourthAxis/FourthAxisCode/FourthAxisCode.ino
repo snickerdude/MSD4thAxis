@@ -24,7 +24,7 @@ enum keymap{
   DOT,		NUM_0,	PLUS_MINUS,	ENTER,		JOG_CCW,			JOG_CW,				UNASGN_4
 };
 
-keymap Keymap == keymap::ENTER;
+//keymap Keymap == keymap::ENTER;
 
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
