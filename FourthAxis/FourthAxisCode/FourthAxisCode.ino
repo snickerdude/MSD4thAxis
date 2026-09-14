@@ -94,17 +94,17 @@ void loop(){
   Display.DC.mult = params.mult;
   Display.updateDisplay();
   //Serial.println(Keymap::ENTER);
-  if (params.mode == "Handwheel") {
+  if (params.mode == 0) {
     // HW logic
     /*
       check HW dir, check estop, send multiplier*dir number of pulses
     */
-  } else if (params.mode == "Jog") {
+  } else if (params.mode == 1) {
     // Jog logic
     /*
       check estop, check jog button(s) pressed, send multiplier*dir number of pulses
     */
-  } else if (params.mode == "Angle") {
+  } else if (params.mode == 2) {
     // angle logic
     /*
       check estop
@@ -112,7 +112,7 @@ void loop(){
       check for (go to angle) or (increment by angle)
       move by angle while monitoring estop
     */
-  } else if (params.mode == "Spline") {
+  } else if (params.mode == 3) {
     // spline logic
     /*
       check estop
