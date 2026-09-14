@@ -82,17 +82,44 @@ void loop(){
   //digitalWrite(12, HIGH);
   Display.DC.hwPos = Handwheel._position;
   Display.DC.encPos = Encoder._position;
+  Display.DC.mode = params.mode;
+  Display.DC.mult = params.mult;
   Display.updateDisplay();
   //Serial.println(Keymap::ENTER);
-  if (DC.Mode == "Handwheel") {
+  if (params.mode == "Handwheel") {
     // HW logic
-  } else if (DC.Mode == "Jog") {
+    /*
+      check HW dir, check estop, send multiplier*dir number of pulses
+    */
+  } else if (params.mode == "Jog") {
     // Jog logic
-  } else if (DC.Mode == "Angle") {
+    /*
+      check estop, check jog button(s) pressed, send multiplier*dir number of pulses
+    */
+  } else if (params.mode == "Angle") {
     // angle logic
-  } else if (DC.Mode == "Spline") {
+    /*
+      check estop
+      prompt for angle
+      check for (go to angle) or (increment by angle)
+      move by angle while monitoring estop
+    */
+  } else if (params.mode == "Spline") {
     // spline logic
+    /*
+      check estop
+      prompt for number of splines
+      wait for next spline
+      rotate by calculated # of steps/degrees
+    */
   } else {
     // error out. invalid mode
   }
+}
+
+void updateParams(){
+  params.mode = 0; // read analog pin and update mode accordingly
+  params.mult = 0; // read analog pin and update multiplier accordingly
+  params.HWdir = 0; // check HW direction, update variable, reset HW dir
+  params.estop = 0; // read digital pin and update status accordingly
 }
