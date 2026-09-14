@@ -53,7 +53,7 @@ void loop(){
   Display.DC.hwPos = Handwheel._position;
   Display.DC.encPos = Encoder._position;
   Display.updateDisplay();
-  Serial.println(Keymap::ENTER);
+  //Serial.println(Keymap::ENTER);
   for (int i = 0; i < 8; i ++) {
     
     //Serial.println(0xFFE3FFFF + (i << 18), BIN);
@@ -63,5 +63,5 @@ void loop(){
     //  Serial.print(' ');
     //}
   }
-  //Serial.println("Its an esp32 bitch");
+  //Serial.println("Its an esp32 big chugnus");
   }
