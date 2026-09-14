@@ -1,6 +1,14 @@
 #include <keypad.h>
 #include <encoder.h>
 #include <display.h>
+#include "A4988.h"
+
+// using a 200-step motor (most common)
+#define MOTOR_STEPS 200
+// configure the pins connected
+#define DIR 27
+#define STEP 26
+#define EN 32
 
 // pins used for the handwheel encoder
 const uint8_t HAND_A = 4;
