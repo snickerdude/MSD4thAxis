@@ -30,6 +30,36 @@ encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
 display Display;
 
+struct {
+  /*
+  Operating mode
+    0 = Handwheel
+    1 = Jog
+    2 = Angle
+    3 = Spline
+  */
+  uint8_t mode; 
+  /*
+  Multiplier
+    0 = 1x
+    1 = 10x
+    2 = 100x
+  */
+  uint8_t mult;
+  /*
+  Estop boolean
+    True if e-stop is pressed
+    False if e-stop is not pressed
+  */
+  bool estop;
+  /* 
+  Handwheel direction
+    0 if no change since last check
+    1 if CW change since last check
+    2 if CCW change since last check
+  */
+  uint8_t HWdir;
+} params;
 
 void setup(){
   Serial.begin(9600);
@@ -48,20 +78,21 @@ void loop(){
   //Serial.println(Handwheel.getPosition());
   //Serial.println(Encoder.getPosition());
   //Serial.println(Handwheel._position);
-  //Keypad.scan();
+  Keypad.scan();
   //digitalWrite(12, HIGH);
   Display.DC.hwPos = Handwheel._position;
   Display.DC.encPos = Encoder._position;
   Display.updateDisplay();
   //Serial.println(Keymap::ENTER);
-  for (int i = 0; i < 8; i ++) {
-    
-    //Serial.println(0xFFE3FFFF + (i << 18), BIN);
-
-    //if (digitalRead(i) == HIGH){
-    //  Serial.print(i);
-    //  Serial.print(' ');
-    //}
+  if (DC.Mode == "Handwheel") {
+    // HW logic
+  } else if (DC.Mode == "Jog") {
+    // Jog logic
+  } else if (DC.Mode == "Angle") {
+    // angle logic
+  } else if (DC.Mode == "Spline") {
+    // spline logic
+  } else {
+    // error out. invalid mode
   }
-  //Serial.println("Its an esp32 big chugnus");
-  }
+}

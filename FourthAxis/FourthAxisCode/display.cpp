@@ -28,6 +28,12 @@ void display::updateDisplay(){
 			tempText = "Handwheel";
 			break;
 		case 1:
+			tempText = "Jog";
+			break;
+		case 2:
+			tempText = "Angle";
+			break;
+		case 3:
 			tempText = "Spline";
 			break;
 		default:
