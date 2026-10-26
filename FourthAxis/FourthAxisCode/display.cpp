@@ -25,7 +25,7 @@ void display::updateDisplay(){
 	Display.setCursor(0, 0);
 	switch (DC.mode) {
 		case 0:
-			tempText = "Handwheel";
+			tempText = "Handle";
 			break;
 		case 1:
 			tempText = "Jog";
@@ -43,10 +43,10 @@ void display::updateDisplay(){
 	
 	switch (DC.mult) {
 		case 0:
-			tempText = "1x";
+			tempText = "  1x";
 			break;
 		case 1:
-			tempText = "10x";
+			tempText = " 10x";
 			break;
 		case 2:
 			tempText = "100x";
@@ -59,6 +59,7 @@ void display::updateDisplay(){
 	double encPosDeg = ((double)DC.encPos / 57000) * 360;
 	Display.printf("Encoder pos: %.4f\n", encPosDeg);
 	Display.printf("Handwheel pos: %d\n", DC.hwPos);
+	Display.printf("ESTOP: %d\n", DC.estop);
 	
 	Display.display();
 }
