@@ -104,6 +104,9 @@ void loop(){
   //Serial.println(Handwheel._position);
   Keypad.scan();
   //digitalWrite(12, HIGH);
+
+  updateParams();
+
   Display.DC.hwPos = Handwheel._position;
   Display.DC.encPos = Encoder._position;
   Display.DC.mode = params.mode;
