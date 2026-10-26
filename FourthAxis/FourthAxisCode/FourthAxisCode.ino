@@ -21,10 +21,17 @@ const uint8_t ENC_B = 35;
 const uint8_t ENC_Z = 36;
 const uint16_t ENC_DEB = 10; // 10us debounce delay
 
+//pins for knobs
+#define KNOB_MULT 2 //knob 1 USING IO 2
+#define KNOB_MODE 25 //knob 2
+
 // pins used for the stepper driver
 #define MOTOR_STP 26
 #define MOTOR_DIR 27
 #define MOTOR_EN 32
+
+//pin for ESTOP
+#define ESTOP 39
 
 uint8_t state = 0;
 int32_t pos = 0;
@@ -45,6 +52,7 @@ encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
 display Display;
 //BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
 
+void updateParams();
 
 struct {
   /*
@@ -77,6 +85,10 @@ struct {
   uint8_t HWdir;
 } params;
 
+// ---- knob decoding -------------------------------------------------------
+// Thresholds are midpoints between detent readings (12-bit, 0-4095).
+
+
 void setup(){
   Serial.begin(9600);
   Keypad.begin();
@@ -88,9 +100,11 @@ void setup(){
   pinMode(MOTOR_DIR, OUTPUT);
   pinMode(MOTOR_STP, OUTPUT);
   pinMode(MOTOR_EN, OUTPUT);
+  pinMode(ESTOP, INPUT);
   digitalWrite(MOTOR_DIR, HIGH);
   digitalWrite(MOTOR_EN, LOW);
   
+  analogReadResolution(12);   // match ADC_BITS in the main code (0-4095)
 
   Display.DC.mode = 1;
   Display.DC.mult = 2;
@@ -102,7 +116,7 @@ void loop(){
   //Serial.println(Handwheel.getPosition());
   //Serial.println(Encoder.getPosition());
   //Serial.println(Handwheel._position);
-  Keypad.scan();
+  //Keypad.scan();
   //digitalWrite(12, HIGH);
 
   updateParams();
@@ -153,8 +167,26 @@ void loop(){
 }
 
 void updateParams(){
-  params.mode = 0; // read analog pin and update mode accordingly
-  params.mult = 0; // read analog pin and update multiplier accordingly
-  params.HWdir = 0; // check HW direction, update variable, reset HW dir
-  params.estop = 0; // read digital pin and update status accordingly
+  //params.mode = 0; // read analog pin and update mode accordingly
+  //params.mult = 0; // read analog pin and update multiplier accordingly
+  //params.HWdir = 0; // check HW direction, update variable, reset HW dir
+  //params.estop = 0; // read digital pin and update status accordingly
+
+  uint16_t mult = analogRead(KNOB_MULT);
+  uint16_t mode = analogRead(KNOB_MODE);
+  uint8_t estop = !digitalRead(ESTOP);
+
+//KNOBS
+if (mode < 1000)      params.mode = 0;   // Handwheel
+  else if (mode < 2000) params.mode = 1;   // Jog
+  else if (mode < 3000) params.mode = 2;   // Angle
+  else                  params.mode = 3;   // Spline
+
+  if (mult < 1500)      params.mult = 0;   // 1x
+  else if (mult < 3000) params.mult = 1;   // 10x
+  else                  params.mult = 2;   // 100x
+
+  //ESTOP
+  params.estop = estop;
+  Display.DC.estop = estop;
 }
