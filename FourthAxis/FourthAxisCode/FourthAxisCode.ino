@@ -96,9 +96,6 @@ struct {
   uint8_t HWdir;
 } params;
 
-// ---- knob decoding -------------------------------------------------------
-// Thresholds are midpoints between detent readings (12-bit, 0-4095).
-
 
 void setup(){
   Serial.begin(9600);
