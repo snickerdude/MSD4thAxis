@@ -5,15 +5,16 @@
 
 // using a 200-step motor (most common)
 #define MOTOR_STEPS 200
-// configure the pins connected
-//#define DIR 27
-//#define STEP 26
-//#define EN 32
+// pins used for the stepper driver
+#define MOTOR_STP 26
+#define MOTOR_DIR 27
+#define MOTOR_EN 32
 
 // pins used for the handwheel encoder
 const uint8_t HAND_A = 4;
 const uint8_t HAND_B = 5;
 const uint16_t HAND_DEB = 100; //debounce delay
+uint8_t temp_HW = 0;
 
 // pins used for the motor encoder
 const uint8_t ENC_A = 34;
@@ -36,6 +37,15 @@ const uint16_t ENC_DEB = 10; // 10us debounce delay
 uint8_t state = 0;
 int32_t pos = 0;
 
+// function prototypes
+//void StepperOutTask(void* params);
+void updateParams();
+
+// define tasks
+TaskHandle_t StepperOut;
+
+
+
 keypad Keypad;
 // enum used to assign strings to each key value
 enum keymap{
@@ -50,6 +60,7 @@ enum keymap{
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
 display Display;
+BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
 //BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
 
 void updateParams();
@@ -95,11 +106,21 @@ void setup(){
   Handwheel.begin();
   Encoder.begin();
   Display.begin();
-  //Stepper.begin(100, 1);
+  
   //Stepper.setEnableActiveState(LOW);
   pinMode(MOTOR_DIR, OUTPUT);
   pinMode(MOTOR_STP, OUTPUT);
   pinMode(MOTOR_EN, OUTPUT);
+
+  xTaskCreatePinnedToCore(
+    StepperOutTask, /* Function to implement the task */
+    "stp and dir output", /* Name of the task */
+    10000,  /* Stack size in words */
+    NULL,  /* Task input parameter */
+    0,  /* Priority of the task */
+    &StepperOut,  /* Task handle. */
+    0); /* Core where the task should run */
+
   pinMode(ESTOP, INPUT);
   digitalWrite(MOTOR_DIR, HIGH);
   digitalWrite(MOTOR_EN, LOW);
@@ -126,17 +147,13 @@ void loop(){
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
   Display.updateDisplay();
-  //Stepper.rotate(20);
-  if (digitalRead(MOTOR_STP) == HIGH){
-    digitalWrite(MOTOR_STP, LOW);
-  } else {
-    digitalWrite(MOTOR_STP, HIGH);
-  }
-
 
   //Serial.println(Keymap::ENTER);
   if (params.mode == 0) {
     // HW logic
+    if (Handwheel._direction){
+      
+    }
     /*
       check HW dir, check estop, send multiplier*dir number of pulses
     */
@@ -167,6 +184,12 @@ void loop(){
 }
 
 void updateParams(){
+void StepperOutTask(void* params){
+  Stepper.begin(100, 1);
+  for(;;) {
+    Stepper.rotate(20);
+    //delay(10);
+  }
   //params.mode = 0; // read analog pin and update mode accordingly
   //params.mult = 0; // read analog pin and update multiplier accordingly
   //params.HWdir = 0; // check HW direction, update variable, reset HW dir
