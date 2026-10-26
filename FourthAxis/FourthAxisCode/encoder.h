@@ -13,6 +13,7 @@ class encoder {
 		
 		// other variables
 		volatile int32_t _position = 0;
+		volatile uint8_t _direction = 0; // 0 = stationary, 1 = CW, 2 = CCW
 	private:
 		uint8_t _aPin;
 		uint8_t _bPin;
