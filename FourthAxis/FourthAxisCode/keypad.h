@@ -6,6 +6,23 @@
 #include <Arduino.h>
 #include <vector>
 
+//key constants
+enum KeyCode : uint8_t {
+    K_NONE = 0,
+    K_DECIMAL = '.',
+    K_PLUSMINUS = '~',      // any unused printable/nonprintable value works
+    K_DEL = 0x80,
+    K_ENTER,
+    K_SET_ZERO,
+    K_RETURN_ZERO,
+    K_SET_SPLINES,
+    K_NEXT_ANGLE,
+    K_SET_ANGLE_ABS,
+    K_ADD_ANGLE_INC,
+    K_JOG_CCW,
+    K_JOG_CW
+};
+
 class keypad {
 public:
 	// Class constructor
@@ -37,7 +54,12 @@ public:
 	/**
 	 * @brief Check if a specific key is currently pressed (active state).
 	 */
-	bool isKeyPressed(char key) const;
+	bool isKeyPressed(uint8_t key) const;
+	uint8_t getKey();                 // returns a newly pressed key once, else K_NONE
+
+private:
+const uint8_t* _keyMap;
+uint8_t _lastPressed = K_NONE;
 
 private:
 	
@@ -61,7 +83,6 @@ private:
 	
 	
     
-	const char* _keyMap;
 
 	// Internal tracking structures
 	bool* _keyStates;       // Current stable debounced state of each key

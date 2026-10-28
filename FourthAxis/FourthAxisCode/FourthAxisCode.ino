@@ -2,6 +2,8 @@
 #include <encoder.h>
 #include <display.h>
 #include "A4988.h"
+#include "keypad.h"
+
 
 // using a 200-step motor (most common)
 #define MOTOR_STEPS 200
@@ -36,6 +38,9 @@ const uint16_t ENC_DEB = 10; // 10us debounce delay
 
 uint8_t state = 0;
 int32_t pos = 0;
+
+//keyboard
+keypad kp;
 
 // function prototypes
 void StepperOutTask(void* params);
@@ -103,6 +108,7 @@ void setup(){
   Handwheel.begin();
   Encoder.begin();
   Display.begin();
+  kp.begin();
   
   //Stepper.setEnableActiveState(LOW);
   pinMode(MOTOR_DIR, OUTPUT);
@@ -178,6 +184,13 @@ void loop(){
   } else {
     // error out. invalid mode
   }
+
+//keypad testing
+  kp.update();
+    uint8_t k = kp.getKey();
+    if (k) Serial.printf("pressed: 0x%02X\n", k);
+    if (kp.isKeyPressed(K_JOG_CW)) Serial.println("jog CW held");
+    
 }
 
 void updateParams(){
@@ -212,6 +225,7 @@ void StepperOutTask(void* params){
     //delay(10);
   }
 }
+
 
   
 
