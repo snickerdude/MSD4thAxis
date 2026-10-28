@@ -38,7 +38,7 @@ uint8_t state = 0;
 int32_t pos = 0;
 
 // function prototypes
-//void StepperOutTask(void* params);
+void StepperOutTask(void* params);
 void updateParams();
 
 // define tasks
@@ -139,7 +139,7 @@ void loop(){
 
   updateParams();
 
-  Display.DC.hwPos = Handwheel._position;
+  Display.DC.hwPos = Handwheel._direction;
   Display.DC.encPos = Encoder._position;
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
@@ -181,23 +181,11 @@ void loop(){
 }
 
 void updateParams(){
-void StepperOutTask(void* params){
-  Stepper.begin(100, 1);
-  for(;;) {
-    Stepper.rotate(20);
-    //delay(10);
-  }
-  //params.mode = 0; // read analog pin and update mode accordingly
-  //params.mult = 0; // read analog pin and update multiplier accordingly
-  //params.HWdir = 0; // check HW direction, update variable, reset HW dir
-  //params.estop = 0; // read digital pin and update status accordingly
-
   uint16_t mult = analogRead(KNOB_MULT);
   uint16_t mode = analogRead(KNOB_MODE);
   uint8_t estop = !digitalRead(ESTOP);
-
-//KNOBS
-if (mode < 1000)      params.mode = 0;   // Handwheel
+  //KNOBS
+  if (mode < 1000)      params.mode = 0;   // Handwheel
   else if (mode < 2000) params.mode = 1;   // Jog
   else if (mode < 3000) params.mode = 2;   // Angle
   else                  params.mode = 3;   // Spline
@@ -209,4 +197,21 @@ if (mode < 1000)      params.mode = 0;   // Handwheel
   //ESTOP
   params.estop = estop;
   Display.DC.estop = estop;
+  
 }
+void StepperOutTask(void* params){
+  Stepper.begin(100, 1);
+  for(;;) {
+    if (Handwheel._direction == 1){
+      Stepper.rotate(20);
+    } else if (Handwheel._direction == 2){
+      Stepper.rotate(-20);
+    }
+    Handwheel._direction = 0;
+    
+    //delay(10);
+  }
+}
+
+  
+
