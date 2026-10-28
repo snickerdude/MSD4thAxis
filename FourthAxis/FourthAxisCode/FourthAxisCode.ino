@@ -2,6 +2,7 @@
 #include <encoder.h>
 #include <display.h>
 #include "A4988.h"
+#include <math.h>
 
 // using a 200-step motor (most common)
 #define MOTOR_STEPS 200
@@ -9,11 +10,13 @@
 #define MOTOR_STP 26
 #define MOTOR_DIR 27
 #define MOTOR_EN 32
+// target position of the motor in steps
+int32_t TARGET_POS = 0;
 
 // pins used for the handwheel encoder
 const uint8_t HAND_A = 4;
 const uint8_t HAND_B = 5;
-const uint16_t HAND_DEB = 100; //debounce delay
+const uint16_t HAND_DEB = 100; // debounce delay in us
 uint8_t temp_HW = 0;
 
 // pins used for the motor encoder
@@ -34,8 +37,8 @@ const uint16_t ENC_DEB = 10; // 10us debounce delay
 //pin for ESTOP
 #define ESTOP 39
 
-uint8_t state = 0;
-int32_t pos = 0;
+//uint8_t state = 0;
+//int32_t pos = 0;
 
 // function prototypes
 void StepperOutTask(void* params);
@@ -43,8 +46,6 @@ void updateParams();
 
 // define tasks
 TaskHandle_t StepperOut;
-
-
 
 keypad Keypad;
 // enum used to assign strings to each key value
@@ -55,15 +56,10 @@ enum keymap{
   DOT,		NUM_0,	PLUS_MINUS,	ENTER,		JOG_CCW,			JOG_CW,				UNASGN_4
 };
 
-//keymap Keymap == keymap::ENTER;
-
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
 display Display;
 BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
-//BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
-
-void updateParams();
 
 struct {
   /*
@@ -98,7 +94,7 @@ struct {
 
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   Keypad.begin();
   Handwheel.begin();
   Encoder.begin();
@@ -119,6 +115,8 @@ void setup(){
     0); /* Core where the task should run */
 
   pinMode(ESTOP, INPUT);
+  pinMode(KNOB_MULT, INPUT);
+  pinMode(KNOB_MODE, INPUT);
   digitalWrite(MOTOR_DIR, HIGH);
   digitalWrite(MOTOR_EN, LOW);
   
@@ -199,17 +197,17 @@ void updateParams(){
   Display.DC.estop = estop;
   
 }
-void StepperOutTask(void* params){
-  Stepper.begin(100, 1);
+void StepperOutTask(void* Params){
+  Stepper.begin(360, 1);
+  uint16_t steps = 0;
   for(;;) {
+    steps = 10 * pow(2, (params.mult + 1));
     if (Handwheel._direction == 1){
-      Stepper.rotate(20);
+      Stepper.rotate(steps);
     } else if (Handwheel._direction == 2){
-      Stepper.rotate(-20);
+      Stepper.rotate(-1*steps);
     }
     Handwheel._direction = 0;
-    
-    //delay(10);
   }
 }
 

@@ -37,9 +37,10 @@ void ARDUINO_ISR_ATTR encoder::staticZisr(void* arg) {
 }
 
 void ARDUINO_ISR_ATTR encoder::handleA() {
+	uint8_t b_status = digitalRead(_bPin);
 	uint64_t now = esp_timer_get_time();
 	if (now - _timer > _debounce) {
-		if (digitalRead(_bPin)){
+		if (b_status){
 			 _position --; 
 			 _direction = 1;
 		} else {
