@@ -15,6 +15,8 @@ struct displayContents {
 	bool estop;
 	int32_t actPos;   // motor position steps
 	float angle;      // shaft angle in degrees
+	uint8_t angState;   // 0 idle, 1 ABS entry, 2 INC entry
+	char entry[16];			//angle text
 };
 
 

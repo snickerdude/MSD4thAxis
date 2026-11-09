@@ -6,6 +6,8 @@
 
 // using a 200-step motor (most common)
 #define MOTOR_STEPS 200
+//1:100 worm gear ratio so 20000
+#define STEPS_PER_REV 20000
 // pins used for the stepper driver
 #define MOTOR_STP 26
 #define MOTOR_DIR 27
@@ -86,6 +88,13 @@ struct {
   uint8_t HWdir;
 } params;
 
+//angle mode variables
+enum AngleState : uint8_t { ANG_IDLE, ANG_ABS, ANG_INC }; //angle mode states
+static AngleState angState = ANG_IDLE;
+static char    angBuf[10]; //typed characters
+static uint8_t angLen = 0; //number of characters in buffer
+static bool    angNeg = false; //sign +-
+
 
 void setup(){
   Serial.begin(115200);
@@ -132,6 +141,8 @@ void loop(){
   Display.DC.actPos = ACTUAL_POS;
   Display.DC.angle  = positionToAngle(ACTUAL_POS);
   Display.updateDisplay();
+  Display.DC.angState = (params.mode == 2) ? angState : 0;
+  snprintf((char*)Display.DC.entry, sizeof(Display.DC.entry), "%s%s", angNeg ? "-" : "", angBuf);
 
 
   if (params.mode == 0) {
@@ -174,6 +185,7 @@ void loop(){
     */
   } else if (params.mode == 2) {
     // angle logic
+    angleModeUpdate();
     /*
       check estop
       prompt for angle
@@ -253,5 +265,68 @@ int32_t angleToPosition(float degrees) {
   return (int32_t)lroundf(degrees / 0.018);
 }
 
-  
+//angle mode functions
 
+void angleReset() { //clear all
+  angState = ANG_IDLE;
+  angLen = 0;
+  angBuf[0] = '\0';
+  angNeg = false;
+}
+
+static bool angHasDecimal() { return strchr(angBuf, '.') != nullptr; }
+
+void angleCommit() {
+  if (angLen == 0) return; // nothing typed yet
+  float deg = atof(angBuf); //convert string into float
+  if (angNeg) deg = -deg; //apply the sign
+
+  int32_t delta;
+  if (angState == ANG_INC) {
+    // relative to where the spindle is (or is heading)
+    delta = angleToPosition(deg);
+  } else {
+    // ABS: go to this angle relative to zero
+    int32_t want = angleToPosition(deg) % STEPS_PER_REV; //desired position
+    if (want < 0) want += STEPS_PER_REV;
+    int32_t cur = TARGET_POS % STEPS_PER_REV; //current position
+    if (cur < 0) cur += STEPS_PER_REV;
+    delta = want - cur;
+    //shortest path
+    if (delta >  STEPS_PER_REV / 2) delta -= STEPS_PER_REV;
+    if (delta <= -STEPS_PER_REV / 2) delta += STEPS_PER_REV;
+  }
+  TARGET_POS += delta;
+  angleReset();                               // back to idle, ready for next entry
+}
+
+void angleModeUpdate() {
+  uint8_t k = kp.getKey();
+  if (params.estop) { angleReset(); return; } // e-stop cancels any entry
+  if (k == K_NONE) return;
+//ABS OR INC MODE
+  if (k == K_SET_ANGLE_ABS) { angState = ANG_ABS; return; }
+  if (k == K_ADD_ANGLE_INC) { angState = ANG_INC; return; }
+  if (angState == ANG_IDLE) return;           // ignore everything else until started
+  //key inputs
+  if ((k >= 1 && k <= 9) || k == '0') {
+    if (angLen < sizeof(angBuf) - 1) {
+      angBuf[angLen++] = (k == '0') ? '0' : ('0' + k);
+      angBuf[angLen] = '\0';
+    }
+  } else if (k == K_DECIMAL) {
+    if (!angHasDecimal() && angLen < sizeof(angBuf) - 2) {
+      if (angLen == 0) angBuf[angLen++] = '0';   // ".5" -> "0.5"
+      angBuf[angLen++] = '.';
+      angBuf[angLen] = '\0';
+    }
+  } else if (k == K_PLUSMINUS) {
+    angNeg = !angNeg;
+  } else if (k == K_DEL) {
+    if (angLen > 0)  angBuf[--angLen] = '\0';    // backspace
+    else if (angNeg) angNeg = false;
+    else             angleReset();               // DEL on empty entry cancels
+  } else if (k == K_ENTER) {
+    angleCommit();
+  }
+}
