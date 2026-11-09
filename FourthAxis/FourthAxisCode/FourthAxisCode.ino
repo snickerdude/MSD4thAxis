@@ -13,6 +13,7 @@
 // target position of the motor in steps
 // signed integer so it can rotate backwards
 int32_t TARGET_POS = 0;
+int32_t ACTUAL_POS = 0;
 
 // pins used for the handwheel encoder
 const uint8_t HAND_A = 4;
@@ -125,22 +126,41 @@ void loop(){
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
   Display.updateDisplay();
+  Serial.print(TARGET_POS);
+  Serial.print(' ');
+  Serial.println(ACTUAL_POS);
 
 
   if (params.mode == 0) {
     // HW logic
-    if (Handwheel._direction){
-      
+    
+    uint8_t steps = 10 * pow(2, (params.mult + 1));
+    if (Handwheel._direction == 1){
+      if (TARGET_POS - ACTUAL_POS < steps*2) {
+        TARGET_POS += steps;
+      }
+    } else if (Handwheel._direction == 2){
+      if (ACTUAL_POS - TARGET_POS < steps*2) {
+        TARGET_POS -= steps;
+      }
     }
+    if (Handwheel._direction) Handwheel._direction = 0;
+    
     /*
       check HW dir, check estop, send multiplier*dir number of pulses
     */
   } else if (params.mode == 1) {
     // Jog logic
     uint8_t steps = 10 * pow(2, (params.mult + 1));
-    if (params.estop) ? (break) : (continue);
-    if (kp.isKeyPressed(K_JOG_CW)) TARGET_POS += steps;
-    if (kp.isKeyPressed(K_JOG_CW)) TARGET_POS -= steps;
+    if (true){
+      //Serial.println(kp.isKeyPressed(K_JOG_CW));
+      if (kp.isKeyPressed(K_JOG_CW)) {
+        TARGET_POS += steps;
+      }
+      if (kp.isKeyPressed(K_JOG_CW)) {
+        TARGET_POS -= steps;
+      }
+    }
     /*
       check estop, check jog button(s) pressed, send multiplier*dir number of pulses
     */
@@ -166,9 +186,11 @@ void loop(){
 
 //keypad testing
   kp.update();
+  /*
     uint8_t k = kp.getKey();
     if (k) Serial.printf("pressed: 0x%02X\n", k);
     if (kp.isKeyPressed(K_JOG_CW)) Serial.println("jog CW held");
+    */
     
 }
 
@@ -191,17 +213,18 @@ void updateParams(){
   Display.DC.estop = estop;
   
 }
+
 void StepperOutTask(void* Params){
   Stepper.begin(360, 1);
-  uint16_t steps = 0;
+  int32_t steps = 0;
   for(;;) {
-    steps = 10 * pow(2, (params.mult + 1));
-    if (Handwheel._direction == 1){
-      Stepper.rotate(steps);
-    } else if (Handwheel._direction == 2){
-      Stepper.rotate(-1*steps);
+    steps = TARGET_POS - ACTUAL_POS;
+    //Serial.println(steps);
+    if (steps != 0){
+      Serial.println(steps);
+      Stepper.move(steps);
+      ACTUAL_POS += steps;
     }
-    Handwheel._direction = 0;
   }
 }
 
