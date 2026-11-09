@@ -11,6 +11,7 @@
 #define MOTOR_DIR 27
 #define MOTOR_EN 32
 // target position of the motor in steps
+// signed integer so it can rotate backwards
 int32_t TARGET_POS = 0;
 
 // pins used for the handwheel encoder
@@ -37,12 +38,6 @@ const uint16_t ENC_DEB = 10; // 10us debounce delay
 //pin for ESTOP
 #define ESTOP 39
 
-//uint8_t state = 0;
-//int32_t pos = 0;
-
-//keyboard
-keypad kp;
-
 // function prototypes
 void StepperOutTask(void* params);
 void updateParams();
@@ -50,18 +45,11 @@ void updateParams();
 // define tasks
 TaskHandle_t StepperOut;
 
-keypad Keypad;
-// enum used to assign strings to each key value
-enum keymap{
-  NUM_1, 	NUM_2,	NUM_3, 			NOKEY_1, 	SET_ZERO, 		RET_ZERO, 		UNASGN_1,
-  NUM_4, 	NUM_5,	NUM_6, 			NOKEY_2, 	SET_SPLN, 		NXT_ANGL, 		UNASGN_2,
-  NUM_7, 	NUM_8,	NUM_9, 			DEL,			SET_ANGL_ABS, ADD_ANGL_INC, UNASGN_3,
-  DOT,		NUM_0,	PLUS_MINUS,	ENTER,		JOG_CCW,			JOG_CW,				UNASGN_4
-};
 
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
 display Display;
+keypad kp;
 BasicStepperDriver Stepper(MOTOR_STEPS, MOTOR_DIR, MOTOR_STP, MOTOR_EN);
 
 struct {
@@ -98,13 +86,11 @@ struct {
 
 void setup(){
   Serial.begin(115200);
-  Keypad.begin();
   Handwheel.begin();
   Encoder.begin();
   Display.begin();
   kp.begin();
   
-  //Stepper.setEnableActiveState(LOW);
   pinMode(MOTOR_DIR, OUTPUT);
   pinMode(MOTOR_STP, OUTPUT);
   pinMode(MOTOR_EN, OUTPUT);
@@ -132,13 +118,6 @@ void setup(){
 }
 
 void loop(){
-  //delay(1);
-  //Serial.println(Handwheel.getPosition());
-  //Serial.println(Encoder.getPosition());
-  //Serial.println(Handwheel._position);
-  //Keypad.scan();
-  //digitalWrite(12, HIGH);
-
   updateParams();
 
   Display.DC.hwPos = Handwheel._direction;
@@ -147,7 +126,7 @@ void loop(){
   Display.DC.mult = params.mult;
   Display.updateDisplay();
 
-  //Serial.println(Keymap::ENTER);
+
   if (params.mode == 0) {
     // HW logic
     if (Handwheel._direction){
@@ -158,6 +137,10 @@ void loop(){
     */
   } else if (params.mode == 1) {
     // Jog logic
+    uint8_t steps = 10 * pow(2, (params.mult + 1));
+    if (params.estop) ? (break) : (continue);
+    if (kp.isKeyPressed(K_JOG_CW)) TARGET_POS += steps;
+    if (kp.isKeyPressed(K_JOG_CW)) TARGET_POS -= steps;
     /*
       check estop, check jog button(s) pressed, send multiplier*dir number of pulses
     */

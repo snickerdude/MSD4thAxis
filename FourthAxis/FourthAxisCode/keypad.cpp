@@ -10,15 +10,15 @@
 decimal, 0, +-, enter, jog CCW, jog CW, x]
 */
 static const uint8_t KEYMAP[28] = {
-    '1','2','3', K_NONE, K_SET_ZERO,      K_RETURN_ZERO,   K_NONE,
-    '4','5','6', K_NONE, K_SET_SPLINES,   K_NEXT_ANGLE,    K_NONE,
-    '7','8','9', K_DEL,  K_SET_ANGLE_ABS, K_ADD_ANGLE_INC, K_NONE,
+    1,2,3, K_NONE, K_SET_ZERO,      K_RETURN_ZERO,   K_NONE,
+    4,5,6, K_NONE, K_SET_SPLINES,   K_NEXT_ANGLE,    K_NONE,
+    7,8,9, K_DEL,  K_SET_ANGLE_ABS, K_ADD_ANGLE_INC, K_NONE,
     K_DECIMAL,'0',K_PLUSMINUS, K_ENTER, K_JOG_CCW, K_JOG_CW, K_NONE
 };
 
 keypad::keypad() {
-    int totalKeys = NUM_ROWS * NUM_COLS;;
-		_keyMap = KEYMAP;
+    int totalKeys = NUM_ROWS * NUM_COLS;
+    _keyMap = KEYMAP;
     _keyStates = new bool[totalKeys]();
     _rawStates = new bool[totalKeys]();
     _lastDebounceTime = new unsigned long[totalKeys]();
@@ -39,8 +39,6 @@ void keypad::begin() {
 		pinMode(pin, INPUT_PULLDOWN);
 	}
 	Serial.println("Keypad setup success");
-	
-	
 }
 
 void keypad::update() {
@@ -88,7 +86,7 @@ void keypad::scan() {
 } // end function 
 
 bool keypad::isKeyPressed(uint8_t key) const {
-		if (key == K_NONE) return false;
+	if (key == K_NONE) return false;
     int totalKeys = NUM_ROWS * NUM_COLS;
     for (int i = 0; i < totalKeys; ++i) {
         if (_keyMap[i] == key) {
