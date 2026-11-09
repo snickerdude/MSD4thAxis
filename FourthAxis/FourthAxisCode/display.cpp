@@ -60,6 +60,9 @@ void display::updateDisplay(){
 	Display.printf("Encoder pos: %.4f\n", encPosDeg);
 	Display.printf("Handwheel pos: %d\n", DC.hwPos);
 	Display.printf("ESTOP: %d\n", DC.estop);
+	Display.printf("Pos: %ld\n", (long)DC.actPos);
+	Display.printf("Angle: %.3f\n", DC.angle);
+	
 	
 	Display.display();
 }
