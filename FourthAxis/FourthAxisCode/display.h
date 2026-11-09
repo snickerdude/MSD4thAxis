@@ -13,6 +13,8 @@ struct displayContents {
 	int32_t hwPos;
 	uint8_t key;
 	bool estop;
+	int32_t actPos;   // motor position steps
+	float angle;      // shaft angle in degrees
 };
 
 

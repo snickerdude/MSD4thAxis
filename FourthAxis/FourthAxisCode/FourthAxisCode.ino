@@ -125,6 +125,8 @@ void loop(){
   Display.DC.encPos = Encoder._position;
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
+  Display.DC.actPos = ACTUAL_POS;
+  Display.DC.angle  = positionToAngle(ACTUAL_POS);
   Display.updateDisplay();
   Serial.print(TARGET_POS);
   Serial.print(' ');
@@ -219,7 +221,7 @@ void StepperOutTask(void* Params){
   int32_t steps = 0;
   for(;;) {
     steps = TARGET_POS - ACTUAL_POS;
-    //Serial.println(steps);
+    Serial.println(steps);
     if (steps != 0){
       Serial.println(steps);
       Stepper.move(steps);
@@ -228,6 +230,16 @@ void StepperOutTask(void* Params){
   }
 }
 
+float positionToAngle(int32_t pos) {
+  int32_t wrapped = pos % 20000; //20000 steps per revolution
+  if (wrapped < 0) wrapped += 20000;
+  return wrapped * 0.018; //0.018 degree per step = 20000/360
+}
+
+//angle to position for angle mode
+int32_t angleToPosition(float degrees) {
+  return (int32_t)lroundf(degrees / 0.018);
+}
 
   
 
