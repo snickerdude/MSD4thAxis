@@ -45,7 +45,9 @@ void updateParams();
 
 // define tasks
 TaskHandle_t StepperOut;
-
+// mutex for position
+SemaphoreHandle_t POS_mutex = NULL;
+#define MUTEX_TIMEOUT 5000
 
 encoder Handwheel(HAND_A, HAND_B, 100, HAND_DEB);
 encoder Encoder(ENC_A, ENC_B, ENC_Z, ENC_DEB);
@@ -105,6 +107,8 @@ void setup(){
     &StepperOut,  /* Task handle. */
     0); /* Core where the task should run */
 
+  POS_mutex = xSemaphoreCreateMutex();
+
   pinMode(ESTOP, INPUT);
   pinMode(KNOB_MULT, INPUT);
   pinMode(KNOB_MODE, INPUT);
@@ -126,23 +130,22 @@ void loop(){
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
   Display.updateDisplay();
-  Serial.print(TARGET_POS);
-  Serial.print(' ');
-  Serial.println(ACTUAL_POS);
 
 
   if (params.mode == 0) {
     // HW logic
     
     uint8_t steps = 10 * pow(2, (params.mult + 1));
-    if (Handwheel._direction == 1){
+    if (Handwheel._direction == 1 && xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
       if (TARGET_POS - ACTUAL_POS < steps*2) {
         TARGET_POS += steps;
       }
-    } else if (Handwheel._direction == 2){
+      xSemaphoreGive(POS_mutex);
+    } else if (Handwheel._direction == 2 && xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
       if (ACTUAL_POS - TARGET_POS < steps*2) {
         TARGET_POS -= steps;
       }
+      xSemaphoreGive(POS_mutex);
     }
     if (Handwheel._direction) Handwheel._direction = 0;
     
@@ -151,15 +154,18 @@ void loop(){
     */
   } else if (params.mode == 1) {
     // Jog logic
-    uint8_t steps = 10 * pow(2, (params.mult + 1));
-    if (true){
+    uint8_t steps = pow(2, (params.mult + 1));
+    if (true && xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
       //Serial.println(kp.isKeyPressed(K_JOG_CW));
       if (kp.isKeyPressed(K_JOG_CW)) {
+        Serial.println("JOG CW pressed");
         TARGET_POS += steps;
       }
-      if (kp.isKeyPressed(K_JOG_CW)) {
+      if (kp.isKeyPressed(K_JOG_CCW)) {
+        Serial.println("JOG CCW pressed");
         TARGET_POS -= steps;
       }
+      xSemaphoreGive(POS_mutex);
     }
     /*
       check estop, check jog button(s) pressed, send multiplier*dir number of pulses
@@ -218,13 +224,19 @@ void StepperOutTask(void* Params){
   Stepper.begin(360, 1);
   int32_t steps = 0;
   for(;;) {
+  
     steps = TARGET_POS - ACTUAL_POS;
-    //Serial.println(steps);
-    if (steps != 0){
-      Serial.println(steps);
-      Stepper.move(steps);
-      ACTUAL_POS += steps;
+    //Serial.print(TARGET_POS);
+    //Serial.print(' ');
+    //Serial.println(ACTUAL_POS);
+    if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
+      if (steps != 0){
+        Stepper.move(steps);
+        ACTUAL_POS += steps;
+      }
+      xSemaphoreGive(POS_mutex);
     }
+    
   }
 }
 
