@@ -252,11 +252,6 @@ void StepperOutTask(void* Params){
       if (steps != 0){
         Stepper.move(steps);
         ACTUAL_POS += steps;
-        if (ACTUAL_POS > STEPS_PER_REV){
-          ACTUAL_POS -= STEPS_PER_REV;
-        } else if (ACTUAL_POS < -STEPS_PER_REV){
-          ACTUAL_POS += STEPS_PER_REV;
-        }
       }
       xSemaphoreGive(POS_mutex);
     }
