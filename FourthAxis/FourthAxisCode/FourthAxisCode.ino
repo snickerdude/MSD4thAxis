@@ -5,9 +5,11 @@
 #include <math.h>
 
 // using a 200-step motor (most common)
+// using a 100 to 1 worm gear reduction
 #define MOTOR_STEPS 200
+#define WORM_REDUC 100
 //1:100 worm gear ratio so 20000
-#define STEPS_PER_REV 20000
+#define STEPS_PER_REV (MOTOR_STEPS*WORM_REDUC)
 // pins used for the stepper driver
 #define MOTOR_STP 26
 #define MOTOR_DIR 27
@@ -180,8 +182,7 @@ void loop(){
   } else if (params.mode == 1) {
     // Jog logic
     uint8_t steps = pow(2, (params.mult + 1));
-    if (true && xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
-      //Serial.println(kp.isKeyPressed(K_JOG_CW));
+    if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
       if (kp.isKeyPressed(K_JOG_CW)) {
         Serial.println("JOG CW pressed");
         TARGET_POS += steps;
@@ -216,14 +217,7 @@ void loop(){
     // error out. invalid mode
   }
 
-//keypad testing
   kp.update();
-  /*
-    uint8_t k = kp.getKey();
-    if (k) Serial.printf("pressed: 0x%02X\n", k);
-    if (kp.isKeyPressed(K_JOG_CW)) Serial.println("jog CW held");
-    */
-   
 }
 
 void updateParams(){
@@ -232,8 +226,8 @@ void updateParams(){
   uint8_t estop = !digitalRead(ESTOP);
   //KNOBS
   if (mode < 1000)      params.mode = 0;   // Handwheel
-  else if (mode < 2000) params.mode = 1;   // Jog
-  else if (mode < 3000) params.mode = 2;   // Angle
+  else if (mode < 2200) params.mode = 1;   // Jog
+  else if (mode < 3200) params.mode = 2;   // Angle
   else                  params.mode = 3;   // Spline
 
   if (mult < 1500)      params.mult = 0;   // 1x
@@ -259,16 +253,20 @@ void StepperOutTask(void* Params){
       if (steps != 0){
         Stepper.move(steps);
         ACTUAL_POS += steps;
+        if (ACTUAL_POS > STEPS_PER_REV){
+          ACTUAL_POS -= STEPS_PER_REV;
+        } else if (ACTUAL_POS < -STEPS_PER_REV){
+          ACTUAL_POS += STEPS_PER_REV;
+        }
       }
       xSemaphoreGive(POS_mutex);
     }
-    
   }
 }
 
 float positionToAngle(int32_t pos) {
-  int32_t wrapped = pos % 20000; //20000 steps per revolution
-  if (wrapped < 0) wrapped += 20000;
+  int32_t wrapped = pos % STEPS_PER_REV; //20000 steps per revolution
+  if (wrapped < 0) wrapped += STEPS_PER_REV;
   return wrapped * 0.018; //0.018 degree per step = 20000/360
 }
 
@@ -301,21 +299,27 @@ void angleCommit() {
     // ABS: go to this angle relative to zero
     int32_t want = angleToPosition(deg) % STEPS_PER_REV; //desired position
     if (want < 0) want += STEPS_PER_REV;
-    int32_t cur = (TARGET_POS - ZERO_OFFSET) % STEPS_PER_REV; //current position
-    if (cur < 0) cur += STEPS_PER_REV;
-    delta = want - cur;
+    //int32_t cur = TARGET_POS % STEPS_PER_REV; //current position
+    //if (cur < 0) cur += STEPS_PER_REV;
+    if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
+      delta = want - ACTUAL_POS;
+      xSemaphoreGive(POS_mutex);
+    }
     //shortest path
     if (delta >  STEPS_PER_REV / 2) delta -= STEPS_PER_REV;
     if (delta <= -STEPS_PER_REV / 2) delta += STEPS_PER_REV;
   }
-  TARGET_POS += delta;
+  if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
+    TARGET_POS += delta;
+    xSemaphoreGive(POS_mutex);
+  }
   angleReset();                               // back to idle, ready for next entry
 }
 
 void angleModeUpdate(uint8_t k) {
   if (params.estop) { angleReset(); return; } // e-stop cancels any entry
   if (k == K_NONE) return;
-//ABS OR INC MODE
+  //ABS OR INC MODE
   if (k == K_SET_ANGLE_ABS) { angState = ANG_ABS; return; }
   if (k == K_ADD_ANGLE_INC) { angState = ANG_INC; return; }
   if (angState == ANG_IDLE) return;           // ignore everything else until started
