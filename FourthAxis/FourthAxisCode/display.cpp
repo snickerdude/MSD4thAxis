@@ -58,10 +58,14 @@ void display::updateDisplay(){
 	
 	double encPosDeg = ((double)DC.encPos / 57000) * 360;
 	Display.printf("Encoder pos: %.4f\n", encPosDeg);
-	Display.printf("Handwheel pos: %d\n", DC.hwPos);
+	//Display.printf("Handwheel pos: %d\n", DC.hwPos);
 	Display.printf("ESTOP: %d\n", DC.estop);
 	Display.printf("Pos: %ld\n", (long)DC.actPos);
 	Display.printf("Angle: %.3f\n", DC.angle);
+	
+	if (DC.angState == 1)      Display.printf("ABS> %s_\n", (const char*)DC.entry);
+	else if (DC.angState == 2) Display.printf("INC> %s_\n", (const char*)DC.entry);
+	else if (DC.mode == 2)     Display.print("Press ABS or INC");
 	
 	
 	Display.display();
