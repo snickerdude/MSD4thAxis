@@ -146,14 +146,17 @@ void loop(){
     lastMode = params.mode;
   }
   uint8_t key = kp.getKey();           // read once per pass
-  if (handleZeroKeys(key)) key = K_NONE;   // zero keys handled here, in every mode
-
+  if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
+    if (handleZeroKeys(key)) key = K_NONE;   // zero keys handled here, in every mode
+    Display.DC.actPos = ACTUAL_POS; // this is here to mutex protect it
+    Display.DC.angle  = positionToAngle(ACTUAL_POS); // this is here to mutex protect it
+    xSemaphoreGive(POS_mutex);
+  }
+  
   Display.DC.hwPos = Handwheel._direction;
   Display.DC.encPos = Encoder._position;
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
-  Display.DC.actPos = ACTUAL_POS - ZERO_OFFSET;
-  Display.DC.angle  = positionToAngle(ACTUAL_POS - ZERO_OFFSET);
   Display.DC.angState = (params.mode == 2) ? angState : 0;
   snprintf((char*)Display.DC.entry, sizeof(Display.DC.entry), "%s%s", angNeg ? "-" : "", angBuf);
   Display.updateDisplay();
@@ -244,12 +247,8 @@ void StepperOutTask(void* Params){
   Stepper.begin(360, 1);
   int32_t steps = 0;
   for(;;) {
-  
-    steps = TARGET_POS - ACTUAL_POS;
-    //Serial.print(TARGET_POS);
-    //Serial.print(' ');
-    //Serial.println(ACTUAL_POS);
     if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
+      steps = TARGET_POS - ACTUAL_POS;
       if (steps != 0){
         Stepper.move(steps);
         ACTUAL_POS += steps;
@@ -349,18 +348,18 @@ void angleModeUpdate(uint8_t k) {
 //zeroing
 bool handleZeroKeys(uint8_t k) {
   if (k == K_SET_ZERO) {
-    if (TARGET_POS == ACTUAL_POS) ZERO_OFFSET = ACTUAL_POS;   // only when stopped
-    angleReset();               // harmless outside angle mode
+    if (TARGET_POS == ACTUAL_POS) {ACTUAL_POS = 0; TARGET_POS = 0;}   // only when stopped
+    //angleReset();               // harmless outside angle mode
     return true;
   }
   if (k == K_RETURN_ZERO) {
     if (!params.estop) {
-      int32_t rel = (TARGET_POS - ZERO_OFFSET) % STEPS_PER_REV;
+      int32_t rel = ACTUAL_POS;//(TARGET_POS - ZERO_OFFSET) % STEPS_PER_REV;
       if (rel >  STEPS_PER_REV / 2) rel -= STEPS_PER_REV;
       if (rel < -STEPS_PER_REV / 2) rel += STEPS_PER_REV;
       TARGET_POS -= rel;
     }
-    angleReset();
+    //angleReset();
     return true;
   }
   return false;
