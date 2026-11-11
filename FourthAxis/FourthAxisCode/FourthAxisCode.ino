@@ -95,6 +95,8 @@ static char    angBuf[10]; //typed characters
 static uint8_t angLen = 0; //number of characters in buffer
 static bool    angNeg = false; //sign +-
 
+//zero offset
+volatile int32_t ZERO_OFFSET = 0;
 
 void setup(){
   Serial.begin(115200);
@@ -134,15 +136,25 @@ void setup(){
 void loop(){
   updateParams();
 
+  //mode change
+  static uint8_t lastMode = 0xFF;
+  if (params.mode != lastMode) {
+    angleReset();
+    kp.getKey();                       // flush stale key
+    lastMode = params.mode;
+  }
+  uint8_t key = kp.getKey();           // read once per pass
+  if (handleZeroKeys(key)) key = K_NONE;   // zero keys handled here, in every mode
+
   Display.DC.hwPos = Handwheel._direction;
   Display.DC.encPos = Encoder._position;
   Display.DC.mode = params.mode;
   Display.DC.mult = params.mult;
-  Display.DC.actPos = ACTUAL_POS;
-  Display.DC.angle  = positionToAngle(ACTUAL_POS);
-  Display.updateDisplay();
+  Display.DC.actPos = ACTUAL_POS - ZERO_OFFSET;
+  Display.DC.angle  = positionToAngle(ACTUAL_POS - ZERO_OFFSET);
   Display.DC.angState = (params.mode == 2) ? angState : 0;
   snprintf((char*)Display.DC.entry, sizeof(Display.DC.entry), "%s%s", angNeg ? "-" : "", angBuf);
+  Display.updateDisplay();
 
 
   if (params.mode == 0) {
@@ -185,7 +197,7 @@ void loop(){
     */
   } else if (params.mode == 2) {
     // angle logic
-    angleModeUpdate();
+    angleModeUpdate(key);
     /*
       check estop
       prompt for angle
@@ -211,7 +223,7 @@ void loop(){
     if (k) Serial.printf("pressed: 0x%02X\n", k);
     if (kp.isKeyPressed(K_JOG_CW)) Serial.println("jog CW held");
     */
-    
+   
 }
 
 void updateParams(){
@@ -289,7 +301,7 @@ void angleCommit() {
     // ABS: go to this angle relative to zero
     int32_t want = angleToPosition(deg) % STEPS_PER_REV; //desired position
     if (want < 0) want += STEPS_PER_REV;
-    int32_t cur = TARGET_POS % STEPS_PER_REV; //current position
+    int32_t cur = (TARGET_POS - ZERO_OFFSET) % STEPS_PER_REV; //current position
     if (cur < 0) cur += STEPS_PER_REV;
     delta = want - cur;
     //shortest path
@@ -300,8 +312,7 @@ void angleCommit() {
   angleReset();                               // back to idle, ready for next entry
 }
 
-void angleModeUpdate() {
-  uint8_t k = kp.getKey();
+void angleModeUpdate(uint8_t k) {
   if (params.estop) { angleReset(); return; } // e-stop cancels any entry
   if (k == K_NONE) return;
 //ABS OR INC MODE
@@ -329,4 +340,24 @@ void angleModeUpdate() {
   } else if (k == K_ENTER) {
     angleCommit();
   }
+}
+
+//zeroing
+bool handleZeroKeys(uint8_t k) {
+  if (k == K_SET_ZERO) {
+    if (TARGET_POS == ACTUAL_POS) ZERO_OFFSET = ACTUAL_POS;   // only when stopped
+    angleReset();               // harmless outside angle mode
+    return true;
+  }
+  if (k == K_RETURN_ZERO) {
+    if (!params.estop) {
+      int32_t rel = (TARGET_POS - ZERO_OFFSET) % STEPS_PER_REV;
+      if (rel >  STEPS_PER_REV / 2) rel -= STEPS_PER_REV;
+      if (rel < -STEPS_PER_REV / 2) rel += STEPS_PER_REV;
+      TARGET_POS -= rel;
+    }
+    angleReset();
+    return true;
+  }
+  return false;
 }
