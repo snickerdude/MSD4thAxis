@@ -100,8 +100,20 @@ static bool    angNeg = false; //sign +-
 //zero offset
 volatile int32_t ZERO_OFFSET = 0;
 
+//spline mode
+#define MAX_SPLINES 999
+enum SplineState : uint8_t { SPL_IDLE, SPL_ENTRY, SPL_ACTIVE };
+static SplineState splState = SPL_IDLE;
+static char    splBuf[4];          // up to 3 digits
+static uint8_t splLen = 0;
+static int32_t splCount = 0;       // N = splines per revolution
+static int32_t splIndex = 0;       // 0..N-1, which spline we're on
+static int32_t splBase  = 0;       // raw position of the current lap's first spline
+
 void setup(){
   Serial.begin(115200);
+
+  Serial.printf("Reset reason: %d\n", (int)esp_reset_reason());
   Handwheel.begin();
   Encoder.begin();
   Display.begin();
@@ -142,6 +154,7 @@ void loop(){
   static uint8_t lastMode = 0xFF;
   if (params.mode != lastMode) {
     angleReset();
+    splineReset();
     kp.getKey();                       // flush stale key
     lastMode = params.mode;
   }
@@ -160,6 +173,12 @@ void loop(){
   Display.DC.angState = (params.mode == 2) ? angState : 0;
   snprintf((char*)Display.DC.entry, sizeof(Display.DC.entry), "%s%s", angNeg ? "-" : "", angBuf);
   Display.updateDisplay();
+  Display.DC.splState = (params.mode == 3) ? splState : 0;
+if (splState == SPL_ENTRY)
+  snprintf((char*)Display.DC.entrySpline, sizeof(Display.DC.entrySpline), "%s", splBuf);
+else if (splState == SPL_ACTIVE)
+  snprintf((char*)Display.DC.entrySpline, sizeof(Display.DC.entrySpline), "%ld/%ld",
+           (long)(splIndex + 1), (long)splCount);
 
 
   if (params.mode == 0) {
@@ -210,12 +229,14 @@ void loop(){
     */
   } else if (params.mode == 3) {
     // spline logic
+    splineModeUpdate(key);
     /*
       check estop
       prompt for number of splines
       wait for next spline
       rotate by calculated # of steps/degrees
     */
+  lastMode = params.mode;
   } else {
     // error out. invalid mode
   }
@@ -245,16 +266,18 @@ void updateParams(){
 
 void StepperOutTask(void* Params){
   Stepper.begin(360, 1);
-  int32_t steps = 0;
+  volatile int32_t steps_remain;
   for(;;) {
     if (xSemaphoreTake(POS_mutex, MUTEX_TIMEOUT)){
-      steps = TARGET_POS - ACTUAL_POS;
-      if (steps != 0){
-        Stepper.move(steps);
-        ACTUAL_POS += steps;
+      steps_remain = TARGET_POS - ACTUAL_POS;
+      if (steps_remain != 0){
+        int32_t chunk = constrain(steps_remain, -200, 200);
+        Stepper.move(chunk);
+        ACTUAL_POS += chunk;
       }
       xSemaphoreGive(POS_mutex);
     }
+    vTaskDelay(1);
   }
 }
 
@@ -339,6 +362,67 @@ void angleModeUpdate(uint8_t k) {
     angleCommit();
   }
 }
+//spline mode
+void splineReset() {
+  splState = SPL_IDLE;
+  splLen = 0;
+  splBuf[0] = '\0';
+  splCount = 0;
+  splIndex = 0;
+}
+static char keyToDigitChar(uint8_t k) {
+  if (k >= 1 && k <= 9) return '0' + k;
+  if (k == '0') return '0';
+  return 0;
+}
+// Raw position of the current spline, measured from the lap's base
+static int32_t splineTarget() {
+  return splBase + (splIndex * STEPS_PER_REV + splCount / 2) / splCount;
+}
+
+void splineModeUpdate(uint8_t k) {
+  if (params.estop) { splineReset(); return; }   // e-stop ends the sequence
+  if (k == K_NONE) return;
+
+  // Set Splines starts (or restarts) a sequence from any state
+  if (k == K_SET_SPLINES) { splineReset(); splState = SPL_ENTRY; return; }
+
+  if (splState == SPL_ENTRY) {
+    char d = keyToDigitChar(k);
+    if (d) {
+      if (splLen < sizeof(splBuf) - 1) {
+        splBuf[splLen++] = d;
+        splBuf[splLen] = '\0';
+      }
+    } else if (k == K_DEL) {
+      if (splLen > 0) splBuf[--splLen] = '\0';
+      else            splineReset();             // DEL on empty entry cancels
+    } else if (k == K_ENTER) {
+      int32_t n = atoi(splBuf);
+      if (n >= 2 && n <= MAX_SPLINES) {
+        splCount = n;
+        splIndex = 0;
+        splBase  = TARGET_POS;                   // spline 1 is wherever the spindle is now
+        splState = SPL_ACTIVE;
+      } else {
+        splLen = 0;                              // invalid count: clear, let them retype
+        splBuf[0] = '\0';
+      }
+    }
+  } else if (splState == SPL_ACTIVE) {
+    // Ignore Next Angle while still moving so a double press can't skip a spline
+    if (k == K_NEXT_ANGLE && TARGET_POS == ACTUAL_POS) {
+      splIndex++;
+      if (splIndex >= splCount) {                // finished a lap: keep turning the same way
+        splBase += STEPS_PER_REV;
+        splIndex = 0;
+      }
+      TARGET_POS = splineTarget();
+    }
+  }
+}
+
+
 
 //zeroing
 bool handleZeroKeys(uint8_t k) {

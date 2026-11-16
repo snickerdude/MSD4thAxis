@@ -65,6 +65,11 @@ void display::updateDisplay(){
 	
 	if (DC.angState == 1)      Display.printf("ABS> %s_\n", (const char*)DC.entry);
 	else if (DC.angState == 2) Display.printf("INC> %s_\n", (const char*)DC.entry);
+	else if (DC.mode == 3) {
+		if (DC.splState == 1)      Display.printf("SPLINES QTY> %s_\n", (const char*)DC.entrySpline);
+		else if (DC.splState == 2) Display.printf("SPLINE %s\n", (const char*)DC.entrySpline);
+		else                       Display.print("Press SET SPLINES");
+	}
 	else if (DC.mode == 2)     Display.print("Press ABS or INC");
 	
 	

@@ -17,6 +17,8 @@ struct displayContents {
 	float angle;      // shaft angle in degrees
 	uint8_t angState;   // 0 idle, 1 ABS entry, 2 INC entry
 	char entry[16];			//angle text
+	uint8_t splState;       // 0 idle, 1 quantity entry, 2 sequence active
+	char entrySpline[16];   // quantity digits, or "3/12" progress text
 };
 
 
